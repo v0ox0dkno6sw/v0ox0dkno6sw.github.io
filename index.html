@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>玛雅论坛7y7y-玛雅文明讨论区</title>
+<meta name="description" content="玛雅论坛7y7y是专注玛雅文明与中美洲考古的中文讨论区，聚集玛雅历法、铭文解读、遗址探访与古典期城邦研究。提供长纪历换算、碑文校勘、蒂卡尔与帕伦克实地笔记，以及爱好者整理的考古年表与阅读清单。">
+<meta name="keywords" content="玛雅论坛7y7y">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c4a3a'/%3E%3Cpath d='M16 46V18h7l9 13 9-13h7v28h-6V28l-10 14-10-14v18z' fill='%23e8c86a'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "玛雅论坛7y7y",
+  "inLanguage": "zh-CN",
+  "description": "专注玛雅文明与中美洲考古的中文讨论区"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "长纪历13.0.0.0.0对应公历哪一天",
+      "acceptedAnswer": {"@type": "Answer", "text": "按GMT相关常数584283计算，13.0.0.0.0对应公元前3114年8月11日；改用584286则整体后移三天。论坛换算表默认采用584283，并在结果旁标注常数来源。"}
+    },
+    {
+      "@type": "Question",
+      "name": "帕伦克铭文神庙的象形文字阶梯为何被拆解",
+      "acceptedAnswer": {"@type": "Answer", "text": "20世纪50年代墨西哥国家人类学与历史研究所为研究地下墓室结构，将部分阶梯石块编号拆下，1990年代起按原始编号逐步复位，现存位置与拓片记录存在差异。"}
+    },
+    {
+      "@type": "Question",
+      "name": "玛雅蓝颜料真的无法复制吗",
+      "acceptedAnswer": {"@type": "Answer", "text": "1960年代起多组实验已复现帕伦克蓝的显色反应，关键在靛蓝与坡缕石黏土按比例研磨后加热。所谓无法复制多指古代配方细节未定，而非颜色本身不可获得。"}
+    },
+    {
+      "@type": "Question",
+      "name": "蒂卡尔四号神庙顶部能否登顶",
+      "acceptedAnswer": {"@type": "Answer", "text": "2025年起蒂卡尔国家公园对四号神庙实行限流，木质阶梯每日限200人，需在入口处领取手环。雨后阶梯湿滑，公园管理处会在上午10点前临时关闭。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#1f2a26;
+  --ink-soft:#4a5a52;
+  --paper:#f6f2e9;
+  --paper-2:#efe9db;
+  --card:#fffdf7;
+  --green:#1c4a3a;
+  --green-2:#2d6b52;
+  --gold:#b8892b;
+  --gold-soft:#e8c86a;
+  --red:#8d3b2f;
+  --line:#d8d0bd;
+  --shadow:0 2px 10px rgba(31,42,38,.08);
+  --shadow-lg:0 10px 30px rgba(31,42,38,.12);
+  --r-s:6px;
+  --r-m:12px;
+  --r-l:20px;
+  --fs-0:12px;
+  --fs-1:13.5px;
+  --fs-2:15px;
+  --fs-3:17px;
+  --fs-4:22px;
+  --fs-5:30px;
+  --fs-6:42px;
+  --sp-1:8px;
+  --sp-2:14px;
+  --sp-3:22px;
+  --sp-4:34px;
+  --sp-5:52px;
+  --ann-h:38px;
+  --head-h:64px;
+  --sticky-off:calc(var(--ann-h) + var(--head-h));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-off) + 12px)}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+  font-size:var(--fs-2);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--green-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.35;margin:0}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.3em}
+li{margin-bottom:6px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸附 ---------- */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.announce{
+  height:var(--ann-h);
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--green);color:#f2ead6;font-size:var(--fs-0);
+  padding:0 12px;overflow:hidden;
+}
+.announce b{color:var(--gold-soft);font-weight:600;letter-spacing:.04em}
+.announce .dot{width:5px;height:5px;border-radius:50%;background:var(--gold-soft);flex:none}
+.announce a{color:#f2ead6;text-decoration:underline;text-underline-offset:3px}
+
+header.site{
+  height:var(--head-h);
+  display:flex;align-items:center;gap:var(--sp-3);
+  background:rgba(253,250,243,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  padding:0 max(16px,calc((100vw - 1240px)/2));
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:34px;height:34px;flex:none}
+.brand-text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-weight:700;font-size:var(--fs-3);letter-spacing:.02em;color:var(--green)}
+nav.main-nav{display:flex;gap:2px;flex:1;flex-wrap:wrap}
+nav.main-nav a{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:var(--fs-1);color:var(--ink-soft);
+  padding:8px 10px;border-radius:var(--r-s);white-space:nowrap;
+}
+nav.main-nav a:hover{background:var(--paper-2);color:var(--green);text-decoration:none}
+nav.main-nav a.is-active{color:var(--green);font-weight:600;background:rgba(28,74,58,.07)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-form{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;overflow:hidden}
+.search-form input{border:0;background:transparent;padding:7px 12px;font-size:var(--fs-1);width:130px;font-family:inherit;color:var(--ink)}
+.search-form input:focus{outline:none}
+.search-form button{border:0;background:var(--green);color:#f6f2e9;padding:7px 14px;font-size:var(--fs-1);cursor:pointer;font-family:inherit}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;color:var(--green);
+  border-radius:var(--r-s);width:38px;height:38px;cursor:pointer;
+  font-size:20px;line-height:1;align-items:center;justify-content:center;
+}
+.search-status{font-size:var(--fs-0);color:var(--red);position:absolute;left:0;top:100%}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#173d30 0%,#1c4a3a 42%,#25604a 100%);
+  color:#f3ecd9;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:120px;
+  background:linear-gradient(180deg,transparent,rgba(23,61,48,.55));pointer-events:none;
+}
+.hero-inner{
+  position:relative;z-index:2;
+  max-width:1240px;margin:0 auto;padding:var(--sp-5) 16px var(--sp-5);
+  display:grid;grid-template-columns:1.05fr .95fr;gap:var(--sp-5);align-items:center;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:var(--fs-0);
+  letter-spacing:.16em;color:var(--gold-soft);
+  border:1px solid rgba(232,200,106,.45);border-radius:999px;padding:4px 14px;margin-bottom:var(--sp-3);
+}
+.hero h1{
+  font-size:var(--fs-6);line-height:1.15;letter-spacing:.01em;
+  color:#fbf5e2;margin-bottom:var(--sp-3);
+}
+.hero h1 span{display:block;font-size:var(--fs-3);letter-spacing:.2em;color:var(--gold-soft);font-weight:400;margin-top:10px;font-family:"Songti SC",serif}
+.hero-lede{font-size:var(--fs-3);color:#dfe4d9;max-width:34em;margin-bottom:var(--sp-3)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-4)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:var(--fs-2);
+  padding:11px 22px;border-radius:999px;border:1px solid transparent;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-gold{background:var(--gold-soft);color:#2a2410;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+.btn-ghost{border-color:rgba(243,236,217,.4);color:#f3ecd9}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero-stats{display:flex;gap:var(--sp-4);flex-wrap:wrap;border-top:1px solid rgba(243,236,217,.2);padding-top:var(--sp-3)}
+.hero-stats div{font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.hero-stats strong{display:block;font-size:var(--fs-4);color:var(--gold-soft);font-weight:600;letter-spacing:.02em}
+.hero-stats small{font-size:var(--fs-0);color:#c9d3c8;letter-spacing:.08em}
+.hero-art{position:relative;justify-self:center;width:100%;max-width:430px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.35))}
+.hero-art .ring{cursor:default}
+@media (prefers-reduced-motion:no-preference){
+  .hero-art .ring-slow{animation:spin 140s linear infinite;transform-origin:215px 215px}
+  .hero-art .ring-slower{animation:spin 220s linear infinite reverse;transform-origin:215px 215px}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1240px;margin:0 auto;padding:var(--sp-5) 16px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-4);align-items:start}
+main{min-width:0}
+aside.side{
+  position:sticky;top:calc(var(--sticky-off) + 16px);
+  display:flex;flex-direction:column;gap:var(--sp-3);
+}
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  aside.side{position:static;order:2}
+  main{order:1}
+  .hero-inner{grid-template-columns:1fr;gap:var(--sp-4)}
+  .hero-art{max-width:330px;order:-1}
+  nav.main-nav{display:none}
+  nav.main-nav.open{
+    display:flex;position:absolute;left:0;right:0;top:100%;
+    background:#fffdf7;border-bottom:1px solid var(--line);
+    padding:10px 16px;flex-direction:column;gap:2px;box-shadow:var(--shadow-lg);
+    max-height:70vh;overflow:auto;
+  }
+  header.site{position:relative}
+  .menu-btn{display:flex}
+  .search-form input{width:96px}
+}
+@media (max-width:600px){
+  :root{--fs-5:24px;--fs-6:32px;--fs-4:20px}
+  .hero-stats{gap:22px}
+  .search-form input{width:80px}
+  .head-tools .search-label{display:none}
+}
+
+/* ---------- 通用板块 ---------- */
+section.block{margin-bottom:var(--sp-5);scroll-margin-top:calc(var(--sticky-off) + 16px)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:var(--sp-3)}
+.sec-head h2{font-size:var(--fs-4);color:var(--green);letter-spacing:.01em}
+.sec-head h2 em{font-style:normal;font-size:var(--fs-0);color:var(--gold);letter-spacing:.14em;margin-right:10px;font-family:"PingFang SC",sans-serif;vertical-align:middle}
+.sec-head .more{font-size:var(--fs-1);white-space:nowrap;color:var(--ink-soft);font-family:"PingFang SC",sans-serif}
+.sec-sub{font-size:var(--fs-1);color:var(--ink-soft);margin:-6px 0 var(--sp-3)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--shadow)}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-2)}
+.overview-grid .ov{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);
+  padding:var(--sp-3);position:relative;overflow:hidden;
+}
+.ov b{font-family:"PingFang SC",sans-serif;font-size:var(--fs-5);color:var(--green);display:block;line-height:1.1}
+.ov .lab{font-family:"PingFang SC",sans-serif;font-size:var(--fs-1);color:var(--ink);margin:8px 0 4px;font-weight:600}
+.ov p{font-size:var(--fs-1);color:var(--ink-soft);margin:0}
+.ov::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold-soft)}
+@media (max-width:760px){.overview-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* 精选网格 */
+.featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2)}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.fcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.fcard .thumb{aspect-ratio:16/10;overflow:hidden;background:var(--paper-2)}
+.fcard .thumb img{width:100%;height:100%;object-fit:cover}
+.fcard .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tag{display:inline-block;font-family:"PingFang SC",sans-serif;font-size:var(--fs-0);letter-spacing:.05em;color:var(--green);background:rgba(28,74,58,.08);border-radius:999px;padding:2px 10px;align-self:flex-start}
+.fcard h3{font-size:var(--fs-3);line-height:1.45}
+.fcard h3 a{color:var(--ink)}
+.fcard h3 a:hover{color:var(--green-2)}
+.fcard p{font-size:var(--fs-1);color:var(--ink-soft);margin:0}
+.fcard .meta{font-size:var(--fs-0);color:#8a8877;margin-top:auto;font-family:"PingFang SC",sans-serif}
+@media (max-width:900px){.featured-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.featured-grid{grid-template-columns:1fr}}
+
+/* 最新更新紧凑列表 */
+.updates{display:flex;flex-direction:column}
+.update-item{display:grid;grid-template-columns:88px 1fr auto;gap:14px;align-items:baseline;padding:12px 4px;border-bottom:1px dashed var(--line)}
+.update-item:last-child{border-bottom:0}
+.update-item time{font-family:"PingFang SC",sans-serif;font-size:var(--fs-0);color:var(--gold);letter-spacing:.04em}
+.update-item .ut{font-size:var(--fs-2)}
+.update-item .ut a{color:var(--ink)}
+.update-item .ut a:hover{color:var(--green-2)}
+.update-item .src{font-size:var(--fs-0);color:#8a8877;font-family:"PingFang SC",sans-serif;white-space:nowrap}
+@media (max-width:600px){.update-item{grid-template-columns:66px 1fr}.update-item .src{display:none}}
+
+/* 分类入口 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:10px}
+.cat-index a{
+  display:flex;flex-direction:column;gap:2px;
+  border:1px solid var(--line);background:var(--card);border-radius:var(--r-m);
+  padding:10px 16px;min-width:150px;transition:transform .16s ease,border-color .16s ease;
+}
+.cat-index a:hover{transform:translateY(-2px);border-color:var(--green-2);text-decoration:none}
+.cat-index .cn{font-family:"PingFang SC",sans-serif;font-size:var(--fs-2);color:var(--ink);font-weight:600}
+.cat-index .cd{font-size:var(--fs-0);color:#8a8877}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--sp-4);box-shadow:var(--shadow)}
+.deep .kicker{font-family:"PingFang SC",sans-serif;font-size:var(--fs-0);letter-spacing:.16em;color:var(--red);margin-bottom:10px}
+.deep h2{font-size:var(--fs-5);color:var(--green);margin-bottom:12px;line-height:1.3}
+.deep .lede{font-size:var(--fs-3);color:var(--ink-soft);border-left:3px solid var(--gold-soft);padding-left:16px;margin-bottom:var(--sp-3)}
+.deep h3{font-size:var(--fs-3);color:var(--ink);margin:var(--sp-4) 0 10px;padding-left:12px;border-left:4px solid var(--green-2)}
+.deep p{font-size:var(--fs-2);color:#2a352f}
+.deep blockquote{margin:var(--sp-3) 0;padding:16px 20px;background:var(--paper-2);border-radius:var(--r-m);font-size:var(--fs-2);color:var(--ink-soft)}
+.deep blockquote cite{display:block;font-size:var(--fs-0);color:#8a8877;margin-top:8px;font-style:normal}
+.split-note{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;margin:var(--sp-3) 0}
+.split-note div{padding:14px 16px}
+.split-note div:first-child{background:rgba(28,74,58,.06);border-right:1px solid var(--line)}
+.split-note b{display:block;font-family:"PingFang SC",sans-serif;font-size:var(--fs-1);color:var(--green);margin-bottom:6px}
+.split-note p{font-size:var(--fs-1);margin:0;color:var(--ink-soft)}
+@media (max-width:620px){.split-note{grid-template-columns:1fr}.split-note div:first-child{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* 体验指南 编号步骤 */
+.steps{counter-reset:step;display:grid;gap:12px}
+.step{
+  position:relative;padding:14px 18px 14px 62px;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--r-m);
+}
+.step::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  position:absolute;left:16px;top:14px;
+  font-family:"PingFang SC",sans-serif;font-size:var(--fs-3);color:var(--gold);font-weight:700;letter-spacing:.02em;
+}
+.step h3{font-size:var(--fs-3);margin-bottom:4px}
+.step p{font-size:var(--fs-1);color:var(--ink-soft);margin:0}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:var(--r-m);background:var(--card);margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:14px 18px;font-family:"PingFang SC",sans-serif;font-size:var(--fs-2);
+  color:var(--ink);font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:20px;font-weight:400;line-height:1;transition:transform .18s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details[open] summary{background:rgba(28,74,58,.05)}
+.faq .ans{padding:0 18px 16px;font-size:var(--fs-2);color:var(--ink-soft)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:14px 16px}
+.cmt .who{display:flex;align-items:center;gap:10px;margin-bottom:6px;font-family:"PingFang SC",sans-serif}
+.cmt .av{width:30px;height:30px;border-radius:50%;background:var(--green);color:var(--gold-soft);display:grid;place-items:center;font-size:var(--fs-1);font-weight:700;flex:none}
+.cmt .nm{font-size:var(--fs-1);color:var(--ink);font-weight:600}
+.cmt .tm{font-size:var(--fs-0);color:#8a8877;margin-left:auto}
+.cmt p{font-size:var(--fs-2);margin:0;color:#313c36}
+.cmt .ref{font-size:var(--fs-0);color:var(--green-2);background:rgba(28,74,58,.07);border-radius:var(--r-s);padding:2px 8px;margin-top:8px;display:inline-block}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.news{border-left:3px solid var(--gold-soft);background:var(--card);border-radius:0 var(--r-m) var(--r-m) 0;padding:12px 16px;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.news time{font-family:"PingFang SC",sans-serif;font-size:var(--fs-0);color:var(--gold);letter-spacing:.04em}
+.news h3{font-size:var(--fs-2);margin:4px 0}
+.news h3 a{color:var(--ink)}
+.news p{font-size:var(--fs-1);color:var(--ink-soft);margin:0}
+@media (max-width:680px){.news-grid{grid-template-columns:1fr}}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+.rec-tags a{
+  font-family:"PingFang SC",sans-serif;font-size:var(--fs-1);
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--ink-soft);background:var(--card);
+}
+.rec-tags a:hover{color:var(--green);border-color:var(--green-2);text-decoration:none}
+
+/* 时间线 补充板块 */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl-item{position:relative;margin-bottom:var(--sp-3)}
+.tl-item::before{content:"";position:absolute;left:-24px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--gold-soft);border:2px solid var(--green)}
+.tl-item .yr{font-family:"PingFang SC",sans-serif;font-size:var(--fs-1);color:var(--green);font-weight:700;letter-spacing:.04em}
+.tl-item p{font-size:var(--fs-1);color:var(--ink-soft);margin:2px 0 0}
+
+/* 侧栏 */
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--shadow)}
+.side-card h2{font-size:var(--fs-2);color:var(--green);margin-bottom:10px;display:flex;align-items:center;gap:8px;font-family:"PingFang SC",sans-serif}
+.side-card h2::before{content:"";width:4px;height:16px;background:var(--gold-soft);border-radius:2px}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{font-family:"PingFang SC",sans-serif;font-size:var(--fs-1);color:var(--ink-soft);padding:7px 10px;border-radius:var(--r-s);border-left:2px solid transparent}
+.side-nav a:hover{background:var(--paper-2);color:var(--green);text-decoration:none}
+.side-nav a.active{color:var(--green);font-weight:600;background:rgba(28,74,58,.07);border-left-color:var(--gold)}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{display:flex;gap:10px;font-size:var(--fs-1);padding:6px 0;border-bottom:1px dashed var(--line);align-items:baseline}
+.side-list li:last-child{border-bottom:0}
+.side-list .no{font-family:"PingFang SC",sans-serif;color:var(--gold);font-weight:700;flex:none;width:18px}
+.side-list a{color:var(--ink-soft)}
+.side-list a:hover{color:var(--green)}
+.side-quote{font-size:var(--fs-1);color:var(--ink-soft);font-style:italic;line-height:1.9;margin:0}
+.side-quote cite{display:block;font-style:normal;color:#8a8877;margin-top:8px;font-size:var(--fs-0)}
+
+/* 页脚 */
+footer.site{background:#173d30;color:#cfd8cd;margin-top:var(--sp-5);padding:var(--sp-5) 16px var(--sp-4)}
+.foot-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:var(--sp-4)}
+.foot-brand .bt{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand .bt span{font-family:"PingFang SC",sans-serif;font-size:var(--fs-3);font-weight:700;color:#f3ecd9}
+.foot-brand p{font-size:var(--fs-1);color:#a9b8a9;max-width:26em}
+.foot-col h3{font-size:var(--fs-1);color:var(--gold-soft);letter-spacing:.1em;margin-bottom:10px;font-family:"PingFang SC",sans-serif}
+.foot-col a{display:block;font-size:var(--fs-1);color:#c3cec1;padding:3px 0}
+.foot-col a:hover{color:#fff}
+.foot-note{max-width:1240px;margin:var(--sp-4) auto 0;border-top:1px solid rgba(243,236,217,.15);padding-top:var(--sp-3);font-size:var(--fs-0);color:#93a493;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:900px){.foot-inner{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-inner{grid-template-columns:1fr}}
+
+/* 回顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:80;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--card);color:var(--green);font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow-lg);display:none;align-items:center;justify-content:center;
+}
+.to-top.show{display:flex}
+@media (max-width:600px){.to-top{right:12px;bottom:16px;width:40px;height:40px}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .hero-art .ring-slow,.hero-art .ring-slower{animation:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce" role="region" aria-label="站点更新公告">
+    <span class="dot" aria-hidden="true"></span>
+    <span><b>公告</b> 11月7日新增帕伦克铭文神庙象形文字阶梯第14—22号石块拓片对照表，并同步更新长纪历换算工具的584283常数说明</span>
+    <a href="/#updates">查看</a>
+  </div>
+  <header class="site">
+    <a class="brand" href="/#top" aria-label="返回首页顶部">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="阶梯金字塔与太阳纹样组合标志">
+        <rect width="64" height="64" rx="14" fill="#1c4a3a"/>
+        <circle cx="32" cy="24" r="9" fill="none" stroke="#e8c86a" stroke-width="2.4"/>
+        <circle cx="32" cy="24" r="3.4" fill="#e8c86a"/>
+        <path d="M12 50h40v5H12z" fill="#e8c86a"/>
+        <path d="M20 45h24v5H20z" fill="#e8c86a" opacity=".85"/>
+        <path d="M26 40h12v5H26z" fill="#e8c86a" opacity=".7"/>
+        <path d="M32 9v6M23 12l3 5M41 12l-3 5" stroke="#e8c86a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">玛雅论坛7y7y</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="展开主题导航">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">精选</a>
+      <a href="/#categories">分类</a>
+      <a href="/#deep">深度</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">问答</a>
+      <a href="/#comments">讨论</a>
+      <a href="/#news">资讯</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search-form" id="searchForm" role="search" aria-label="站内本地查找">
+        <input type="search" id="searchInput" placeholder="查找碑文、遗址、历法" aria-label="输入关键词查找本页内容">
+        <button type="submit">查找</button>
+      </form>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-badge">中美洲考古 · 铭文与历法</span>
+      <h1>玛雅论坛7y7y<span>长纪历 · 碑文 · 城邦</span></h1>
+      <p class="hero-lede">围绕古典期低地城邦的铭文校勘、历法换算与遗址踏查展开讨论。这里把拓片编号、常数差异和现场限制放在同一个台面上，供同好逐条比对。</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="/#deep">读深度解析</a>
+        <a class="btn btn-ghost" href="/#guide">看踏查指南</a>
+        <a class="btn btn-ghost" href="/#faq">进问答区</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,284</strong><small>条碑文校勘记录</small></div>
+        <div><strong>47</strong><small>处遗址踏查笔记</small></div>
+        <div><strong>10/31</strong><small>最近一次数据同步</small></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 430 430" role="presentation">
+        <defs>
+          <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#e8c86a" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="#e8c86a" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="stepG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e8c86a" stop-opacity=".95"/>
+            <stop offset="100%" stop-color="#b8892b" stop-opacity=".7"/>
+          </linearGradient>
+        </defs>
+        <circle cx="215" cy="215" r="190" fill="url(#sunGlow)"/>
+        <g class="ring ring-slower" fill="none" stroke="#e8c86a" stroke-opacity=".35" stroke-width="1.4">
+          <circle cx="215" cy="215" r="168"/>
+          <circle cx="215" cy="215" r="150" stroke-dasharray="3 12"/>
+        </g>
+        <g class="ring ring-slow" fill="none" stroke="#e8c86a" stroke-opacity=".55" stroke-width="1.6">
+          <circle cx="215" cy="215" r="132"/>
+        </g>
+        <g stroke="#e8c86a" stroke-width="2.4" stroke-linecap="round" opacity=".8">
+          <path d="M215 47v22"/><path d="M383 215h-22"/><path d="M215 383v-22"/><path d="M47 215h22"/>
+          <path d="M336 94l-15 15"/><path d="M336 336l-15-15"/><path d="M94 336l15-15"/><path d="M94 94l15 15"/>
+        </g>
+        <circle cx="215" cy="215" r="60" fill="none" stroke="#e8c86a" stroke-opacity=".5" stroke-width="1.6"/>
+        <path d="M157 248h116v-12H157z" fill="url(#stepG)"/>
+        <path d="M170 236h90v-12h-90z" fill="url(#stepG)" opacity=".9"/>
+        <path d="M184 224h62v-12h-62z" fill="url(#stepG)" opacity=".8"/>
+        <path d="M198 212h34v-11h-34z" fill="url(#stepG)" opacity=".7"/>
+        <path d="M205 201h20v-9h-20z" fill="#e8c86a"/>
+        <path d="M157 248h116v8H157z" fill="#122e23" opacity=".6"/>
+        <g fill="#e8c86a" opacity=".85">
+          <rect x="248" y="176" width="9" height="9" rx="2"/>
+          <rect x="251" y="161" width="7" height="7" rx="2"/>
+        </g>
+        <text x="215" y="300" text-anchor="middle" font-family="Songti SC,serif" font-size="15" fill="#f3ecd9" opacity=".85" letter-spacing="6">13.0.0.0.0</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+    <main>
+
+      <!-- 领域概览 -->
+      <section class="block" id="overview">
+        <div class="sec-head">
+          <h2><em>01</em>领域概览</h2>
+          <a class="more" href="/#categories">按分类浏览 →</a>
+        </div>
+        <p class="sec-sub">四个常被混谈的维度，先分开再谈关联：历法系统、文字载体、聚落结构与考古编年。</p>
+        <div class="overview-grid">
+          <div class="ov">
+            <b>6</b>
+            <div class="lab">历法循环</div>
+            <p>卓尔金260天与哈布365天咬合出52年一循环，长纪历另起一条连续计数线。</p>
+          </div>
+          <div class="ov">
+            <b>584283</b>
+            <div class="lab">换算常数</div>
+            <p>GMT相关常数的常用取值之一，与584285、584286分别相差一到三天。</p>
+          </div>
+          <div class="ov">
+            <b>800+</b>
+            <div class="lab">已知碑文</div>
+            <p>含石碑、门楣、阶梯与陶器铭文，帕伦克与科潘的文本留存最集中。</p>
+          </div>
+          <div class="ov">
+            <b>250—900</b>
+            <div class="lab">古典期区间</div>
+            <p>以蒂卡尔、卡拉克穆尔双雄争衡为叙事主线的低地时期。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="block" id="featured">
+        <div class="sec-head">
+          <h2><em>02</em>精选内容推荐</h2>
+          <a class="more" href="/#deep">全部深度 →</a>
+        </div>
+        <div class="featured-grid">
+          <article class="fcard">
+            <div class="thumb"><img src="https://picsum.photos/seed/maya-stela/640/400" width="640" height="400" loading="lazy" alt="雨林中的玛雅石碑，表面刻有统治者立像与象形文字列"></div>
+            <div class="body">
+              <span class="tag">碑文校勘</span>
+              <h3><a href="/#deep">科潘石碑M的日期列重读</a></h3>
+              <p>第4—7行字形在1950年拓本与2018年RTI扫描中的差异，直接影响登基日推出的年份。</p>
+              <span class="meta">校勘笔记 · 11月3日</span>
+            </div>
+          </article>
+          <article class="fcard">
+            <div class="thumb"><img src="https://picsum.photos/seed/maya-tikal/640/400" width="640" height="400" loading="lazy" alt="蒂卡尔一号神庙被树冠环绕的石阶立面"></div>
+            <div class="body">
+              <span class="tag">遗址踏查</span>
+              <h3><a href="/#guide">蒂卡尔四号神庙登顶限流实测</a></h3>
+              <p>木质阶梯每日限200人，晨间6点开门后半小时内手环常被领完，雨后关闭时点已记录。</p>
+              <span class="meta">踏查笔记 · 11月5日</span>
+            </div>
+          </article>
+          <article class="fcard">
+            <div class="thumb"><img src="https://picsum.photos/seed/maya-codex/640/400" width="640" height="400" loading="lazy" alt="摊开的德累斯顿抄本复制页，含红色与黑色象形文字与数字条"></div>
+            <div class="body">
+              <span class="tag">抄本与历法</span>
+              <h3><a href="/#faq">德累斯顿抄本金星表的重算</a></h3>
+              <p>金星会合周期584天的修正值如何嵌进104年的大周期，表内误差的分布并不均匀。</p>
+              <span class="meta">文本分析 · 10月29日</span>
+            </div>
+          </article>
+          <article class="fcard">
+            <div class="thumb"><img src="https://picsum.photos/seed/maya-palenque/640/400" width="640" height="400" loading="lazy" alt="帕伦克铭文神庙的屋顶冠饰与灰岩墙体局部"></div>
+            <div class="body">
+              <span class="tag">建筑与铭文</span>
+              <h3><a href="/#news">铭文神庙阶梯石块的复位争议</a></h3>
+              <p>1950年代拆下的石块编号与1990年代复位位置不完全对应，拓片记录成为唯一旁证。</p>
+              <span class="meta">事件梳理 · 11月6日</span>
+            </div>
+          </article>
+          <article class="fcard">
+            <div class="thumb"><img src="https://picsum.photos/seed/maya-cacao/640/400" width="640" height="400" loading="lazy" alt="陶杯表面绘制的可可豆与献祭场景线描"></div>
+            <div class="body">
+              <span class="tag">物质文化</span>
+              <h3><a href="/#news">可可豆作为货币说法的边界</a></h3>
+              <p>殖民时期文献支持可可豆可作小额支付，但古典期铭文中缺乏对应的价格记录。</p>
+              <span class="meta">说法核查 · 11月2日</span>
+            </div>
+          </article>
+          <article class="fcard">
+            <div class="thumb"><img src="https://picsum.photos/seed/maya-observatory/640/400" width="640" height="400" loading="lazy" alt="圆形观象台建筑的螺旋阶梯与观测窗洞"></div>
+            <div class="body">
+              <span class="tag">天文考古</span>
+              <h3><a href="/#news">奇琴伊察螺旋塔的视线测量</a></h3>
+              <p>2019年测量队标定了8个窗口对应金星极值方向，误差区间在1.5度以内。</p>
+              <span class="meta">测量报告 · 10月31日</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block" id="updates">
+        <div class="sec-head">
+          <h2><em>03</em>最新更新</h2>
+          <a class="more" href="/#news">按时间查看 →</a>
+        </div>
+        <div class="card" style="padding:8px 18px">
+          <div class="updates">
+            <div class="update-item">
+              <time datetime="2026-11-08">今天 11-08</time>
+              <span class="ut"><a href="/#faq">长纪历换算工具补注584286常数的三天偏移</a></span>
+              <span class="src">历法组 · 周敬之</span>
+            </div>
+            <div class="update-item">
+              <time datetime="2026-11-07">昨天 11-07</time>
+              <span class="ut"><a href="/#news">帕伦克象形文字阶梯第14—22号石块拓片对照表上线</a></span>
+              <span class="src">铭文组</span>
+            </div>
+            <div class="update-item">
+              <time datetime="2026-11-06">本周 11-06</time>
+              <span class="ut"><a href="/#comments">科潘石碑M日期列重读引发三种读法并存</a></span>
+              <span class="src">讨论区</span>
+            </div>
+            <div class="update-item">
+              <time datetime="2026-11-05">11-05</time>
+              <span class="ut"><a href="/#guide">蒂卡尔四号神庙限流手环发放时间实测记录</a></span>
+              <span class="src">踏查组 · 林峙</span>
+            </div>
+            <div class="update-item">
+              <time datetime="2026-11-01">11-01</time>
+              <span class="ut"><a href="/#categories">新增“陶器铭文”与“殖民期文献”两个分类入口</a></span>
+              <span class="src">站点维护</span>
+            </div>
+            <div class="update-item">
+              <time datetime="2026-10-29">10-29</time>
+              <span class="ut"><a href="/#featured">德累斯顿抄本金星表重算稿修订至第三版</a></span>
+              <span class="src">文本组 · 沈砚秋</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="block" id="categories">
+        <div class="sec-head">
+          <h2><em>04</em>分类入口</h2>
+          <span class="more">10 个频道</span>
+        </div>
+        <div class="cat-index">
+          <a href="/#deep"><span class="cn">玛雅长纪历换算</span><span class="cd">132 条 · 工具与讨论</span></a>
+          <a href="/#deep"><span class="cn">帕伦克铭文解读</span><span class="cd">96 条 · 校勘记录</span></a>
+          <a href="/#featured"><span class="cn">科潘石碑与祭坛</span><span class="cd">74 条 · 图像与拓片</span></a>
+          <a href="/#guide"><span class="cn">蒂卡尔遗址踏查</span><span class="cd">58 条 · 实地笔记</span></a>
+          <a href="/#news"><span class="cn">奇琴伊察天文台</span><span class="cd">41 条 · 视线测量</span></a>
+          <a href="/#faq"><span class="cn">卓尔金历与哈布历</span><span class="cd">63 条 · 周期计算</span></a>
+          <a href="/#featured"><span class="cn">陶器铭文与彩绘</span><span class="cd">37 条 · 器物研究</span></a>
+          <a href="/#news"><span class="cn">玛雅蓝颜料实验</span><span class="cd">29 条 · 材料复原</span></a>
+          <a href="/#comments"><span class="cn">殖民期尤卡坦文献</span><span class="cd">46 条 · 转写与评注</span></a>
+          <a href="/#guide"><span class="cn">雨林交通与装备</span><span class="cd">52 条 · 出行实务</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="block deep" id="deep">
+        <div class="kicker">深度解析 · 唯一主体阅读区</div>
+        <h2>长纪历常数之争，究竟改写了几份登基记录</h2>
+        <p class="lede">把“玛雅历法精确”这句话拆开看，能站住的部分比想象中窄；真正影响年表的是三个常数的选取，而它常常只带来几天位移。可问题是，几天足够把一次登基挪到另一个哈布年。</p>
+
+        <h3>判断一：584283与584286的差异，会改变年份归属的案例不超过已校勘碑文的6%</h3>
+        <p>长纪历与公历的换算依赖一个相关系数，最常用的是584283，即认为长纪历13.0.0.0.0对应公元前3114年8月11日。另有584285与584286两个取值，分别把全部换算结果向后推2天和3天。以论坛登记在册的812条带完整日期列的碑文为样本，三天位移会让大约48条的换算结果跨过哈布年末尾，从而在“某年”与“次年”之间摇摆；若把范围放宽到跨月，受影响条目升至九成以上，但跨月不影响年表叙述。</p>
+        <div class="split-note">
+          <div>
+            <b>可核对项</b>
+            <p>812条中48条跨年；科潘石碑M是其中之一；蒂卡尔石碑29不是；帕伦克十字神庙铭文不是。</p>
+          </div>
+          <div>
+            <b>争议点</b>
+            <p>跨年是否等于“记录错误”。一派认为应当整体采用单一常数保持内部一致，另一派主张按遗址分别标定。</p>
+          </div>
+        </div>
+        <p>科潘石碑M的日期列读作9.14.10.5.0还是9.14.10.5.3，取决于第5行一个人名前的字形被识别为方位词还是日期辅助符。1950年出版的拓本把该字形处理为后者，2018年的反射变换成像扫描显示刻痕深度比同列其他日期符浅约0.4毫米，更接近后期补刻。这一点被论坛铭文组的周敬之在10月29日的记录里标为“待定”，并未做成结论。</p>
+
+        <h3>判断二：靠天文事件“校准”长纪历的说法，在金星数据上支撑不足</h3>
+        <p>德累斯顿抄本第24页的金星表给出了584天的会合周期与若干基准日。用它反推长纪历起点，需要假设表中某些日期是观测记录而非计算值。沈砚秋在10月29日重算至第三版时发现，若把表中4个基准日同时按观测处理，反推出的常数落在584280到584292之间，区间宽达12天，比常数之争本身还大。换句话说，金星表能验证周期长度，很难独立锁定起点。</p>
+        <blockquote>“抄本给的是周期，不是锚点。拿周期去定锚点，等于用一个已知量去解两个未知量。”
+          <cite>—— 文本组第三版重算稿，2026年10月29日，第7页边注</cite>
+        </blockquote>
+        <p>论坛内部对此有明确分歧。历法组11月8日补注认为，抄本中的金星表至少有部分数值能与已知天象对齐，因此不能完全排除其锚点价值；文本组则坚持对齐的容错区间过宽，不足以排除巧合。两组的分歧被原样保留在记录里，没有合并成单一结论。</p>
+
+        <h3>判断三：真正影响普通人阅读的，不是常数，而是“年”在玛雅文本里不承担纪年功能</h3>
+        <p>哈布历的365天由18个月各20天加5个无名日构成，它循环使用，不累计。碑文上的日期通常由长纪历初序、卓尔金历日、哈布历日三部分叠成一组，用途是锁定一个具体日子，而非标注“发生于某年”。现代叙述里说的“公元735年”，是换算后的产物，不是铭文里的原话。这一点直接影响年表写法：把“蒂卡尔统治者登基于公元735年”写成铭文直述，属于转译而非原文。</p>
+        <p>林峙在11月5日的踏查笔记里提供了一个直观例子。蒂卡尔一号神庙门楣上的日期被换算为约公元695年，但门楣本身可能晚于该日期数十年才安装。铭文记录的是被纪念的事件时间，不是雕刻时间。两者差三十年，在建筑分期讨论里足以改变结论。</p>
+        <p>由此得到的可操作规则是：引用碑文日期时，同时标注常数取值和载体年代判断；只写年份的单句，应视为现代叙述而非原始记录。这条规则在本站所有校勘条目里适用，凡是未标常数的一律按584283处理，并在条目末尾注明。</p>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block" id="guide">
+        <div class="sec-head">
+          <h2><em>06</em>体验指南</h2>
+          <span class="more">面向首次踏查者</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>先定遗址，再定季节</h3>
+            <p>低地雨林的雨季集中在6月至10月，蒂卡尔与卡拉克穆尔的土路在雨后容易封闭。11月至次年4月是通行窗口，但1月清晨气温可低至12度，观日出需带薄外套。</p>
+          </div>
+          <div class="step">
+            <h3>确认限流与开放时段</h3>
+            <p>蒂卡尔四号神庙木质阶梯每日限200人，入口处发手环，发完即止。奇琴伊察螺旋塔内部不对外开放，只能在外部测量视线方向，别按旧攻略安排登塔。</p>
+          </div>
+          <div class="step">
+            <h3>带对记录工具</h3>
+            <p>拓片需要宣纸与墨，现场多数遗址禁止直接拓印。改用侧光拍照加比例尺，拍碑面时把20厘米标尺贴在左下角，后期做正射校正时才有参照。</p>
+          </div>
+          <div class="step">
+            <h3>把铭文位置记清</h3>
+            <p>同一建筑的门楣、阶梯、檐口可能分属不同年代。记录时写明“第几层第几级”“面向何方”，比只写建筑名有用得多。科潘石碑的侧面文字常被忽略，实际含统治者母系信息。</p>
+          </div>
+          <div class="step">
+            <h3>回来先对编号</h3>
+            <p>现场拍到的石块若带编号，先查是否有已知拓片。帕伦克阶梯石块编号在1950年代与1990年代复位之间存在错位，仅凭照片容易把两块不同石块当成同一块。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block faq" id="faq">
+        <div class="sec-head">
+          <h2><em>07</em>常见问答</h2>
+          <span class="more">按提问频次排序</span>
+        </div>
+        <details open>
+          <summary>长纪历13.0.0.0.0对应公历哪一天</summary>
+          <div class="ans">按GMT相关常数584283计算，对应公元前3114年8月11日；改用584286则整体后移三天，变为8月14日。论坛换算表默认采用584283，并在结果旁标注常数来源，切换常数时全部结果同步平移，不做局部调整。</div>
+        </details>
+        <details>
+          <summary>帕伦克铭文神庙的象形文字阶梯为何被拆解</summary>
+          <div class="ans">20世纪50年代，墨西哥国家人类学与历史研究所为研究地下墓室结构，将部分阶梯石块编号拆下。1990年代起按原始编号逐步复位，但现存位置与当年拓片记录存在差异，第14至22号石块是目前争议最集中的一段。</div>
+        </details>
+        <details>
+          <summary>玛雅蓝颜料真的无法复制吗</summary>
+          <div class="ans">1960年代起多组实验已复现帕伦克蓝的显色反应，关键在于靛蓝与坡缕石黏土按比例研磨后加热。所谓“无法复制”多指古代配方的具体比例与加热曲线尚未确定，而非颜色本身不可获得，二者不是同一件事。</div>
+        </details>
+        <details>
+          <summary>蒂卡尔四号神庙顶部能否登顶</summary>
+          <div class="ans">2025年起蒂卡尔国家公园对四号神庙实行限流，木质阶梯每日限200人，需在入口处领取手环。雨后阶梯湿滑，公园管理处会在上午10点前临时关闭，11月5日的实测记录显示当日7点40分手环已发完。</div>
+        </details>
+        <details>
+          <summary>卓尔金历和哈布历怎么咬合</summary>
+          <div class="ans">卓尔金历260天由20个日名与13个数字循环组合，哈布历365天由18个20天的月份加5个无名日构成。两者最小公倍数为18980天，约52年完成一次完整重合，这个周期内同一天名与月日的组合不会重复。</div>
+        </details>
+        <details>
+          <summary>科潘石碑M上的日期存在几种读法</summary>
+          <div class="ans">目前记录在案的有三种，分别对应9.14.10.5.0、9.14.10.5.3与9.15.0.0.0。前两种差异来自第5行字形识别，第三种来自对日期列完整性的不同判断，尚无一方取得多数支持。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="block" id="comments">
+        <div class="sec-head">
+          <h2><em>08</em>用户评论</h2>
+          <span class="more">共 26 条 · 按时间</span>
+        </div>
+        <div class="comments">
+          <div class="cmt">
+            <div class="who"><span class="av">周</span><span class="nm">周敬之</span><span class="tm">11-08 09:12</span></div>
+            <p>584286那条补注改得及时，之前用旧表算科潘石碑M总会差三天，先后在三个年份里跳，现在至少知道差在哪一步。</p>
+            <span class="ref">指向：科潘石碑M日期列</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">林</span><span class="nm">林峙</span><span class="tm">11-07 21:40</span></div>
+            <p>蒂卡尔四号神庙那个手环，7点40分就没了的说法我信。11月5日我6点20到，前面已经排了六十多人，第三批之后开始限量。</p>
+            <span class="ref">指向：四号神庙限流实测</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">沈</span><span class="nm">沈砚秋</span><span class="tm">11-07 15:03</span></div>
+            <p>金星表那句“周期不是锚点”说得太满了。周期本身也是测量结果，测量就有误差，误差方向和锚点误差不一定独立，不能简单相除。</p>
+            <span class="ref">指向：深度解析判断二</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">阿</span><span class="nm">阿石</span><span class="tm">11-06 22:18</span></div>
+            <p>我比较在意帕伦克阶梯那段。1950年代的编号表如果还存着，为什么不直接公开扫描件，贴几张拓片照片终归隔了一层。</p>
+            <span class="ref">指向：铭文神庙阶梯石块</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">何</span><span class="nm">何知远</span><span class="tm">11-06 10:55</span></div>
+            <p>抄本重算那篇的第三版我读了，表格里104年周期的分布画得清楚。但用色和第一版差别太大，对照旧图要来回翻。</p>
+            <span class="ref">指向：德累斯顿抄本金星表</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">许</span><span class="nm">许未眠</span><span class="tm">11-05 19:07</span></div>
+            <p>科潘石碑侧面文字常被忽略这条提醒有用。去年拍的M碑，正面拍了十几张，侧面就一张还虚焦，现在只能等下次。</p>
+            <span class="ref">指向：科潘石碑M</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">郑</span><span class="nm">郑兰舟</span><span class="tm">11-04 13:26</span></div>
+            <p>可可豆当货币那段写得克制，没有直接下结论，这比很多地摊读物强。不过古典期缺少价格记录，也可能是记录载体没保存下来，不一定是没有。</p>
+            <span class="ref">指向：可可豆货币说法</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">白</span><span class="nm">白鹭洲</span><span class="tm">11-03 08:41</span></div>
+            <p>页面字有点小，手机上看侧栏要先滚过正文。别的还好，能直接搜“石碑”找到对应条目这点方便。</p>
+            <span class="ref">指向：站点阅读体验</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news">
+        <div class="sec-head">
+          <h2><em>09</em>相关资讯</h2>
+          <a class="more" href="/#updates">全部更新 →</a>
+        </div>
+        <div class="news-grid">
+          <article class="news">
+            <time datetime="2026-11-07">11月7日</time>
+            <h3><a href="/#deep">帕伦克阶梯拓片对照表新增九块</a></h3>
+            <p>第14至22号石块的高清正射影像与1950年代拓本并排，错位处用红框标出。</p>
+          </article>
+          <article class="news">
+            <time datetime="2026-11-06">11月6日</time>
+            <h3><a href="/#comments">石碑M读法讨论新增一版反向意见</a></h3>
+            <p>有成员提出第5行字形应视为方位词，若成立，日期列将整体前移一格而非平移三天。</p>
+          </article>
+          <article class="news">
+            <time datetime="2026-11-05">11月5日</time>
+            <h3><a href="/#guide">蒂卡尔晨间限流实测数据补全</a></h3>
+            <p>记录6点开门、7点40分手环发完、10点前因雨临时关闭三类情形的出现频率。</p>
+          </article>
+          <article class="news">
+            <time datetime="2026-11-02">11月2日</time>
+            <h3><a href="/#featured">玛雅蓝实验记录更新加热曲线</a></h3>
+            <p>新记录给出150度与200度两档加热下坡缕石结构变化的显微照片对比。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="block" id="related">
+        <div class="sec-head">
+          <h2><em>10</em>相关推荐</h2>
+          <span class="more">按标签浏览</span>
+        </div>
+        <div class="rec-tags">
+          <a href="/#deep">长纪历换算表</a>
+          <a href="/#deep">帕伦克铭文校勘</a>
+          <a href="/#featured">科潘石碑图像库</a>
+          <a href="/#guide">蒂卡尔踏查路线</a>
+          <a href="/#news">奇琴伊察天文台测量</a>
+          <a href="/#faq">卓尔金历日名表</a>
+          <a href="/#featured">陶器铭文索引</a>
+          <a href="/#news">玛雅蓝颜料复原</a>
+          <a href="/#comments">尤卡坦殖民期文献</a>
+          <a href="/#guide">雨林装备清单</a>
+        </div>
+      </section>
+
+      <!-- 补充板块：时间线 -->
+      <section class="block" id="timeline">
+        <div class="sec-head">
+          <h2><em>11</em>玛雅考古关键节点时间线</h2>
+          <span class="more">可核对的日期与人物</span>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="yr">1839年</div>
+            <p>斯蒂芬斯与卡瑟伍德抵达科潘，后者绘制的石碑插图成为此后半个世纪的主要参照。</p>
+          </div>
+          <div class="tl-item">
+            <div class="yr">1887年</div>
+            <p>德累斯顿抄本的金星表由福斯特曼首次系统整理，编号方式沿用至今。</p>
+          </div>
+          <div class="tl-item">
+            <div class="yr">1952年</div>
+            <p>帕伦克铭文神庙地下墓室被打开，阶梯石块在同期被编号拆下。</p>
+          </div>
+          <div class="tl-item">
+            <div class="yr">1960年</div>
+            <p>玛雅蓝显色机制实验取得进展，靛蓝与坡缕石的比例关系被写入报告。</p>
+          </div>
+          <div class="tl-item">
+            <div class="yr">1990年代</div>
+            <p>铭文神庙阶梯石块进入复位阶段，原始编号与现存位置出现可查的错位。</p>
+          </div>
+          <div class="tl-item">
+            <div class="yr">2018年</div>
+            <p>科潘石碑M接受反射变换成像扫描，第5行刻痕深度数据公开。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="side" aria-label="侧栏导航与推荐">
+      <div class="side-card">
+        <h2>本页目录</h2>
+        <nav class="side-nav" id="sideNav" aria-label="页面栏目快速定位">
+          <a href="/#overview">领域概览</a>
+          <a href="/#featured">精选内容推荐</a>
+          <a href="/#updates">最新更新</a>
+          <a href="/#categories">分类入口</a>
+          <a href="/#deep">深度解析：常数之争</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#related">相关推荐</a>
+          <a href="/#timeline">考古时间线</a>
+        </nav>
+      </div>
+
+      <div class="side-card">
+        <h2>本周热门校勘</h2>
+        <ol class="side-list">
+          <li><span class="no">1</span><a href="/#deep">科潘石碑M第5行字形之争</a></li>
+          <li><span class="no">2</span><a href="/#news">帕伦克阶梯14—22号石块错位</a></li>
+          <li><span class="no">3</span><a href="/#featured">德累斯顿抄本金星表重算</a></li>
+          <li><span class="no">4</span><a href="/#faq">584286常数与三天平移</a></li>
+          <li><span class="no">5</span><a href="/#guide">蒂卡尔四号神庙限流实测</a></li>
+        </ol>
+      </div>
+
+      <div class="side-card">
+        <h2>踏查者说</h2>
+        <p class="side-quote">“石碑不是立在那里等人读的。它先是对着广场的，后来才对着我们。”
+          <cite>—— 林峙，11月5日踏查笔记</cite>
+        </p>
+      </div>
+
+      <div class="side-card">
+        <h2>数据说明</h2>
+        <p style="font-size:var(--fs-1);color:var(--ink-soft);margin:0">校勘条目与踏查记录为爱好者整理的示例数据，日期截至2026年11月8日。换算结果默认采用584283常数，切换其他常数时全部结果同步平移。</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <div class="bt">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#e8c86a"/>
+          <path d="M16 46V18h7l9 13 9-13h7v28h-6V28l-10 14-10-14v18z" fill="#173d30"/>
+        </svg>
+        <span>玛雅论坛7y7y</span>
+      </div>
+      <p>把拓片编号、常数取值与现场限制放在同一张表里，供逐条比对。</p>
+    </div>
+    <div class="foot-col">
+      <h3>研究频道</h3>
+      <a href="/#deep">长纪历换算</a>
+      <a href="/#deep">帕伦克铭文</a>
+      <a href="/#featured">科潘石碑</a>
+      <a href="/#news">奇琴伊察天文</a>
+    </div>
+    <div class="foot-col">
+      <h3>参与方式</h3>
+      <a href="/#guide">踏查指南</a>
+      <a href="/#comments">讨论区</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#updates">更新日志</a>
+    </div>
+    <div class="foot-col">
+      <h3>资料说明</h3>
+      <a href="/#timeline">考古时间线</a>
+      <a href="/#related">标签索引</a>
+      <a href="/#overview">领域概览</a>
+      <a href="/#top">回到顶部</a>
+    </div>
+  </div>
+  <div class="foot-note">
+    <span>页面内校勘与踏查内容为示例数据，日期截至2026年11月8日；换算默认采用584283常数。</span>
+    <span>© 2026 玛雅论坛7y7y · 内容以讨论与示例整理为主</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if (window.scrollY > 600) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+    highlight();
+  }
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 160, idx = -1;
+    for (var i=0;i<targets.length;i++){
+      if (targets[i] && targets[i].offsetTop <= pos) idx = i;
+    }
+    sideLinks.forEach(function(a,i){ a.classList.toggle('active', i === idx); });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  highlight();
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var status = document.createElement('div');
+  status.className = 'search-status';
+  status.setAttribute('role','status');
+  form.style.position = 'relative';
+  form.appendChild(status);
+
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('main h3, main h2, main .update-item .ut a, main .news h3 a, main .fcard h3 a, main .cat-index .cn, main .rec-tags a, main .cmt p, main .side-list a'));
+  function clearMarks(){
+    document.querySelectorAll('mark[data-hit]').forEach(function(m){
+      var p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m); p.normalize();
+    });
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = input.value.trim();
+    clearMarks();
+    status.textContent = '';
+    if (!q){ status.textContent = '请输入关键词再查找'; return; }
+    var first = null, count = 0;
+    nodes.forEach(function(node){
+      var text = node.textContent || '';
+      if (text.indexOf(q) === -1) return;
+      if (!first) first = node;
+      count++;
+      node.innerHTML = node.innerHTML.split(q).join('<mark data-hit style="background:#e8c86a;color:#1f2a26;padding:0 2px;border-radius:3px">' + q + '</mark>');
+    });
+    if (count === 0){
+      status.textContent = '本页未找到“' + q + '”，可试“石碑”“蒂卡尔”“长纪历”“帕伦克”。';
+    } else {
+      status.textContent = '找到 ' + count + ' 处匹配，已高亮';
+      if (first){
+        var target = first.closest('section') || first;
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    }
+  });
+})();
+</script>
+</body>
+  </html>

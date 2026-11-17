@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>五一轻量版爆料网-假期出行与消费线索</title>
+<meta name="description" content="五一轻量版爆料网汇总2026年五一假期前的出行、景区限流、住宿涨价与消费避坑线索，按时间与可信度分层整理，附核查方法与回应记录，便于出行前逐条比对。"></meta>
+<meta name="keywords" content="五一轻量版爆料网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b3a5c'/%3E%3Cpath d='M16 44 L32 14 L48 44 Z' fill='none' stroke='%23f2a93b' stroke-width='5'/%3E%3Ccircle cx='32' cy='46' r='6' fill='%23f2a93b'/%3E%3C/svg%3E">
+<style>
+:root{
+--ink:#1b2430;
+--ink-2:#3d4a5a;
+--muted:#6b7889;
+--line:#dfe4ea;
+--bg:#f6f7f4;
+--paper:#ffffff;
+--brand:#1b3a5c;
+--brand-2:#2b5d8a;
+--accent:#c9482b;
+--accent-soft:#fbe7e1;
+--gold:#f2a93b;
+--green:#2f7a55;
+--green-soft:#e5f2ea;
+--radius-s:6px;
+--radius-m:12px;
+--radius-l:18px;
+--sp-1:6px;--sp-2:10px;--sp-3:16px;--sp-4:24px;--sp-5:36px;--sp-6:52px;
+--shadow-1:0 1px 2px rgba(27,36,48,.07),0 2px 8px rgba(27,36,48,.06);
+--shadow-2:0 6px 22px rgba(27,36,48,.10);
+--font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+--ann-h:38px;
+--head-h:64px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 12px);}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;}
+a{color:var(--brand-2);text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+p{margin:0 0 var(--sp-3);}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.3em;}
+li{margin-bottom:6px;}
+section{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px);}
+.wrap{width:min(1180px,calc(100% - 40px));margin:0 auto;}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:200;}
+.skip:focus{left:8px;top:8px;}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px;}
+
+/* ---------- 公告 + 页头 ---------- */
+.sticky-zone{position:sticky;top:0;z-index:100;}
+.announce{background:var(--brand);color:#eaf1f8;height:var(--ann-h);display:flex;align-items:center;font-size:13px;overflow:hidden;}
+.announce .wrap{display:flex;align-items:center;gap:14px;width:min(1180px,calc(100% - 32px));}
+.announce .tag{background:var(--gold);color:#2b1c00;font-weight:700;border-radius:4px;padding:1px 7px;font-size:12px;flex:none;}
+.announce .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.announce .txt b{color:#fff;font-weight:600;}
+.announce a{color:#ffd89b;flex:none;}
+header.site{background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);height:var(--head-h);display:flex;align-items:center;}
+header.site .wrap{display:flex;align-items:center;gap:18px;width:min(1180px,calc(100% - 32px));}
+.brand{display:flex;align-items:center;gap:9px;flex:none;}
+.brand svg{width:30px;height:30px;}
+.brand .name{font-size:17px;font-weight:800;color:var(--brand);letter-spacing:.5px;white-space:nowrap;}
+nav.mainnav{margin-left:6px;flex:1;display:flex;align-items:center;gap:4px;overflow:hidden;}
+nav.mainnav a{color:var(--ink-2);font-size:14px;padding:6px 9px;border-radius:var(--radius-s);white-space:nowrap;}
+nav.mainnav a:hover{background:#eef2f7;text-decoration:none;color:var(--brand);}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none;}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#f7f9fb;padding:2px 4px 2px 10px;}
+.search-box input{border:0;background:transparent;font:inherit;font-size:13px;width:118px;padding:5px 0;color:var(--ink);}
+.search-box input:focus{outline:none;}
+.search-box button{border:0;background:var(--brand);color:#fff;border-radius:999px;font-size:12px;padding:5px 11px;cursor:pointer;font-family:inherit;}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);padding:7px 10px;font:inherit;font-size:13px;color:var(--brand);cursor:pointer;}
+.search-feedback{position:absolute;left:0;right:0;top:var(--head-h);background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-1);padding:10px 0;display:none;}
+.search-feedback.on{display:block;}
+.search-feedback .wrap{font-size:13px;color:var(--muted);}
+.search-feedback b{color:var(--accent);}
+
+/* ---------- 首屏 ---------- */
+.hero{background:linear-gradient(168deg,#12304d 0%,#1b3a5c 46%,#26507a 100%);color:#e8eef5;padding:var(--sp-6) 0 0;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:70px;background:linear-gradient(to top,var(--bg),transparent);pointer-events:none;}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--sp-5);align-items:center;position:relative;z-index:1;}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1px;color:#ffd89b;border:1px solid rgba(255,216,155,.45);border-radius:999px;padding:3px 12px;margin-bottom:var(--sp-3);}
+.hero h1{font-size:clamp(28px,4.2vw,46px);letter-spacing:1px;color:#fff;}
+.hero .lede{font-size:16px;color:#c7d6e6;max-width:34em;margin-top:var(--sp-3);}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--sp-4);}
+.btn{display:inline-block;border-radius:var(--radius-s);padding:10px 20px;font-size:14.5px;font-weight:600;transition:transform .16s ease;}
+.btn:hover{text-decoration:none;transform:translateY(-2px);}
+.btn-solid{background:var(--gold);color:#2b1c00;}
+.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#e8eef5;}
+.hero-stats{display:flex;gap:var(--sp-4);margin-top:var(--sp-5);flex-wrap:wrap;}
+.hero-stats div{font-size:12.5px;color:#a9bed4;}
+.hero-stats b{display:block;font-size:22px;color:#fff;font-weight:800;line-height:1.2;}
+.hero-art{position:relative;height:300px;}
+.hero-art svg{width:100%;height:100%;overflow:visible;}
+
+/* ---------- 通用板块 ---------- */
+main{padding:var(--sp-6) 0 0;}
+.block{margin-bottom:var(--sp-6);}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-3);border-bottom:2px solid var(--brand);padding-bottom:8px;margin-bottom:var(--sp-4);flex-wrap:wrap;}
+.block-head h2{font-size:21px;color:var(--brand);}
+.block-head .sub{font-size:13px;color:var(--muted);}
+.block-head .more{font-size:13px;}
+
+/* 概览卡片 */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-4);}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-4);}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);box-shadow:var(--shadow-1);padding:var(--sp-4);}
+.card h3{font-size:16px;color:var(--ink);margin-bottom:8px;}
+.card p{font-size:14px;color:var(--ink-2);margin-bottom:10px;}
+.card .meta{font-size:12.5px;color:var(--muted);}
+.badge{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:999px;background:#eef2f7;color:var(--brand-2);margin-right:6px;}
+.badge.warn{background:var(--accent-soft);color:var(--accent);}
+.badge.ok{background:var(--green-soft);color:var(--green);}
+
+/* 精选推荐 非对称 */
+.feature-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:var(--sp-4);}
+.feature-main{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-l);overflow:hidden;box-shadow:var(--shadow-2);display:flex;flex-direction:column;}
+.feature-main img{width:100%;height:230px;object-fit:cover;}
+.feature-main .inner{padding:var(--sp-4);}
+.feature-main h3{font-size:19px;margin-bottom:10px;}
+.feature-side{display:flex;flex-direction:column;gap:var(--sp-3);}
+.mini-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3);display:flex;gap:12px;align-items:flex-start;}
+.mini-item .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;margin-top:8px;}
+.mini-item h4{font-size:14.5px;margin-bottom:3px;}
+.mini-item .meta{font-size:12px;color:var(--muted);}
+
+/* 紧凑列表（最新更新） */
+.updates{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;}
+.update-row{display:grid;grid-template-columns:96px minmax(0,1fr) 120px;gap:14px;padding:13px var(--sp-4);border-bottom:1px solid var(--line);align-items:baseline;font-size:14px;}
+.update-row:last-child{border-bottom:0;}
+.update-row time{color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums;}
+.update-row .t{color:var(--ink-2);}
+.update-row .src{font-size:12px;color:var(--muted);text-align:right;}
+
+/* 分类入口 */
+.cat-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.cat-index a{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px;font-size:14px;color:var(--ink-2);display:flex;justify-content:space-between;align-items:center;transition:transform .16s ease,border-color .16s ease;}
+.cat-index a:hover{text-decoration:none;transform:translateY(-2px);border-color:var(--brand-2);color:var(--brand);}
+.cat-index a span{font-size:12px;color:var(--muted);}
+
+/* 深度解析 */
+.deep{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-l);padding:var(--sp-5);box-shadow:var(--shadow-1);}
+.deep h2{font-size:22px;color:var(--brand);margin-bottom:6px;}
+.deep .byline{font-size:12.5px;color:var(--muted);margin-bottom:var(--sp-4);}
+.deep h3{font-size:17px;color:var(--ink);margin:var(--sp-4) 0 10px;padding-left:12px;border-left:4px solid var(--gold);}
+.deep p{font-size:15px;color:var(--ink-2);}
+.verdict{background:#fbfaf3;border:1px dashed #d9c9a0;border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4);margin:var(--sp-3) 0;}
+.verdict b{color:var(--accent);}
+.checklist{background:#f4f7fa;border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4) var(--sp-3) var(--sp-4);border:1px solid var(--line);}
+.checklist li{font-size:14px;color:var(--ink-2);}
+.checklist strong{color:var(--brand);}
+
+/* 步骤 */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-3);counter-reset:step;}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3);position:relative;}
+.step::before{counter-increment:step;content:counter(step);display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-size:13px;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px;}
+.step h4{font-size:14.5px;margin-bottom:5px;}
+.step p{font-size:13px;color:var(--ink-2);margin:0;}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;background:var(--paper);}
+.compare>div{padding:var(--sp-4);}
+.compare .left{background:#f9f4f1;}
+.compare .right{border-left:1px solid var(--line);}
+.compare h3{font-size:15px;margin-bottom:10px;}
+.compare ul{padding-left:1.1em;font-size:13.5px;color:var(--ink-2);margin-bottom:0;}
+
+/* FAQ */
+details.faq{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:10px;overflow:hidden;}
+details.faq summary{cursor:pointer;padding:13px var(--sp-4);font-size:14.5px;font-weight:600;color:var(--ink);list-style:none;position:relative;padding-right:44px;}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:"＋";position:absolute;right:var(--sp-4);top:50%;transform:translateY(-50%);color:var(--brand-2);font-weight:400;}
+details.faq[open] summary::after{content:"－";}
+details.faq .ans{padding:0 var(--sp-4) var(--sp-4);font-size:14px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:12px;}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-3);}
+.cmt{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3);font-size:13.5px;color:var(--ink-2);}
+.cmt .who{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin-bottom:8px;}
+.cmt .av{width:26px;height:26px;border-radius:50%;background:#dfe8f1;color:var(--brand);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;}
+.cmt .target{font-weight:600;color:var(--brand);}
+
+/* 相关资讯 */
+.news-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3);}
+.news-item{display:flex;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:12px;font-size:14px;}
+.news-item img{width:88px;height:66px;object-fit:cover;border-radius:var(--radius-s);flex:none;}
+.news-item h4{font-size:14px;margin-bottom:4px;}
+.news-item .meta{font-size:12px;color:var(--muted);}
+
+/* 标签 */
+.tags{display:flex;flex-wrap:wrap;gap:9px;}
+.tags a{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:13.5px;color:var(--ink-2);}
+.tags a:hover{border-color:var(--brand-2);color:var(--brand);text-decoration:none;}
+
+/* 榜单 */
+.rank{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);}
+.rank ol{list-style:none;padding:0;margin:0;counter-reset:rk;}
+.rank li{counter-increment:rk;display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.rank li:last-child{border-bottom:0;}
+.rank li::before{content:counter(rk);font-weight:800;color:var(--gold);font-size:15px;flex:none;width:20px;}
+.rank li .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;flex:none;}
+
+/* 引语 */
+.quote{border-left:4px solid var(--accent);background:#fdf6f3;border-radius:0 var(--radius-m) var(--radius-m) 0;padding:var(--sp-4);font-size:15px;color:var(--ink-2);}
+.quote footer{font-size:12.5px;color:var(--muted);margin-top:8px;}
+
+/* 侧栏 */
+.layout-side{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:var(--sp-5);align-items:start;}
+aside.side{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);}
+.side-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4);margin-bottom:var(--sp-3);}
+.side-card h3{font-size:14px;color:var(--brand);margin-bottom:10px;}
+.side-nav a{display:block;font-size:13.5px;color:var(--ink-2);padding:5px 8px;border-radius:4px;border-left:2px solid transparent;}
+.side-nav a:hover{background:#f3f6fa;text-decoration:none;}
+.side-nav a.active{color:var(--brand);border-left-color:var(--accent);background:#f3f6fa;font-weight:600;}
+.side-card .tiny{font-size:12.5px;color:var(--muted);}
+
+/* 页脚 */
+footer.site-foot{background:#12253a;color:#b9c8d8;margin-top:var(--sp-6);padding:var(--sp-6) 0 var(--sp-4);font-size:13.5px;}
+footer.site-foot .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--sp-4);}
+footer.site-foot h4{color:#fff;font-size:14px;margin-bottom:10px;}
+footer.site-foot a{color:#b9c8d8;}
+footer.site-foot a:hover{color:#fff;}
+footer.site-foot .brandline{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+footer.site-foot .brandline .name{color:#fff;font-weight:800;font-size:16px;}
+footer.site-foot ul{list-style:none;padding:0;margin:0;}
+footer.site-foot li{margin-bottom:6px;}
+.foot-note{border-top:1px solid rgba(255,255,255,.12);margin-top:var(--sp-5);padding-top:var(--sp-3);display:flex;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;font-size:12.5px;color:#8ea3b8;}
+
+/* 回到顶部 */
+#toTop{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;border:0;background:var(--brand);color:#fff;font-size:18px;cursor:pointer;box-shadow:var(--shadow-2);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;z-index:90;}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-3px);}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+  .btn:hover,.cat-index a:hover,#toTop:hover{transform:none;}
+}
+
+/* 平板 */
+@media (max-width:980px){
+  nav.mainnav{display:none;}
+  nav.mainnav.open{display:flex;position:absolute;left:0;right:0;top:var(--head-h);background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 16px;box-shadow:var(--shadow-2);max-height:70vh;overflow:auto;z-index:99;}
+  nav.mainnav.open a{padding:10px 8px;border-bottom:1px solid #f0f3f7;font-size:15px;}
+  .menu-btn{display:inline-block;}
+  .search-box input{width:96px;}
+  .hero .wrap{grid-template-columns:1fr;}
+  .hero-art{height:230px;order:-1;max-width:440px;margin:0 auto;}
+  .layout-side{grid-template-columns:1fr;}
+  aside.side{position:static;order:2;}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cat-index{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .comments{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .feature-layout{grid-template-columns:1fr;}
+  footer.site-foot .cols{grid-template-columns:1fr 1fr;}
+}
+/* 手机 */
+@media (max-width:600px){
+  .wrap{width:calc(100% - 28px);}
+  body{font-size:15px;}
+  .announce{height:auto;min-height:var(--ann-h);padding:6px 0;font-size:12px;}
+  .announce .wrap{gap:8px;}
+  .announce .txt{white-space:normal;line-height:1.4;}
+  :root{--ann-h:52px;}
+  .brand .name{font-size:15px;}
+  .search-box{display:none;}
+  .head-tools{gap:6px;}
+  .grid-3,.grid-2,.cat-index,.steps,.comments,.news-list{grid-template-columns:1fr;}
+  .update-row{grid-template-columns:1fr;gap:2px;padding:12px 16px;}
+  .update-row .src{text-align:left;}
+  .compare{grid-template-columns:1fr;}
+  .compare .right{border-left:0;border-top:1px solid var(--line);}
+  .deep{padding:var(--sp-4) var(--sp-3);}
+  .hero-stats{gap:var(--sp-3);}
+  main{padding-top:var(--sp-4);}
+  footer.site-foot .cols{grid-template-columns:1fr;}
+  #toTop{right:12px;bottom:14px;width:40px;height:40px;}
+  .news-item img{width:76px;height:58px;}
+  .rank li{flex-wrap:wrap;}
+  .rank li .note{margin-left:0;text-align:left;width:100%;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="sticky-zone">
+  <div class="announce" id="announceBar">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span class="txt">11月6日 18:40 追加：<b>黄山汤口镇3家客栈取消“到店加价”条款</b>；11月7日 09:20 收到 <b>淄博八大局市场</b>摊主的价目表回应。</span>
+      <a href="/#updates">查看更新记录</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap" style="position:relative;">
+      <a class="brand" href="/#top" aria-label="返回首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#1b3a5c"></rect>
+          <path d="M16 44 L32 14 L48 44 Z" fill="none" stroke="#f2a93b" stroke-width="5" stroke-linejoin="round"></path>
+          <circle cx="32" cy="47" r="5.5" fill="#f2a93b"></circle>
+        </svg>
+        <span class="name">五一轻量版爆料网</span>
+      </a>
+      <nav class="mainnav" id="mainnav" aria-label="主题导航">
+        <a href="/#overview">假期概览</a>
+        <a href="/#picks">精选线索</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box" role="search">
+          <label for="siteSearch" style="position:absolute;left:-9999px;">站内查找</label>
+          <input id="siteSearch" type="search" placeholder="找景区、住宿、价格…" autocomplete="off">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainnav">菜单</button>
+      </div>
+      <div class="search-feedback" id="searchFeedback" aria-live="polite"><div class="wrap" id="searchFeedbackText"></div></div>
+    </div>
+  </header>
+</div>
+
+<main id="main">
+  <a id="top"></a>
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div>
+        <span class="kicker">2026 五一 · 出行与消费线索分层</span>
+        <h1 id="heroTitle">五一轻量版爆料网</h1>
+        <p class="lede">把景区限流、住宿价格、退改规则、餐饮称重这几类最容易踩坑的信息拆成可核对的小条目，标注时间、来源和回应当事方，出行前花二十分钟逐条比一遍。</p>
+        <div class="cta">
+          <a class="btn btn-solid" href="/#deep">读深度解析</a>
+          <a class="btn btn-ghost" href="/#updates">看最新更新</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>26</b>条已核线索</div>
+          <div><b>9</b>个热门目的地</div>
+          <div><b>4</b>级可信度分层</div>
+          <div><b>11.1—11.8</b>记录区间</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 300" role="presentation" focusable="false">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3d7cb0"></stop>
+              <stop offset="1" stop-color="#1d3f62"></stop>
+            </linearGradient>
+          </defs>
+          <rect x="18" y="26" width="384" height="248" rx="16" fill="url(#g1)" opacity=".85"></rect>
+          <path d="M50 214 L124 112 L176 182 L236 96 L318 214 Z" fill="#12304d" opacity=".9"></path>
+          <path d="M108 214 L176 150 L238 214 Z" fill="#0d2439" opacity=".8"></path>
+          <circle cx="330" cy="82" r="22" fill="#f2a93b" opacity=".9"></circle>
+          <rect x="46" y="228" width="146" height="10" rx="5" fill="#ffd89b" opacity=".7"></rect>
+          <rect x="46" y="246" width="96" height="8" rx="4" fill="#ffd89b" opacity=".45"></rect>
+          <g stroke="#ffd89b" stroke-width="2" opacity=".65" fill="none">
+            <circle cx="300" cy="196" r="15"></circle>
+            <path d="M300 181 v-9 M300 211 v9 M285 196 h-9 M315 196 h9"></path>
+          </g>
+          <g fill="#ffffff" opacity=".55">
+            <circle cx="248" cy="62" r="2.5"></circle>
+            <circle cx="272" cy="52" r="2"></circle>
+            <circle cx="210" cy="70" r="1.8"></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <div class="layout-side">
+      <div>
+
+        <!-- 领域概览 -->
+        <section class="block" id="overview" aria-labelledby="overviewTitle">
+          <div class="block-head">
+            <h2 id="overviewTitle">五一假期出行与消费概览</h2>
+            <span class="sub">截至 2026-11-08 的公开线索</span>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <h3>景区预约与限流</h3>
+              <p>云台山红石峡、西湖断桥、黄山玉屏楼三个点位在假期首两日实行分时预约，单时段票量分别收紧到 8000、12000、4500 人次。</p>
+              <p class="meta"><span class="badge ok">已核实</span>来源：景区官方预约页</p>
+            </article>
+            <article class="card">
+              <h3>住宿价格与退改</h3>
+              <p>汤口镇、大理古城、洛阳老城三处民宿在 4 月 20 日后集中调价，标间从平日 260 元涨到 680—920 元，其中 6 家写明“不可取消”。</p>
+              <p class="meta"><span class="badge warn">有争议</span>商家称平台规则所致</p>
+            </article>
+            <article class="card">
+              <h3>餐饮称重与套餐</h3>
+              <p>淄博八大局市场 11 月 7 日回应的价目表显示，海鲜类按斤计价改为按份标价，摊位编号 A17—A24 已完成换牌。</p>
+              <p class="meta"><span class="badge">待比对</span>来源：市场管理方回复</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 精选内容推荐 -->
+        <section class="block" id="picks" aria-labelledby="picksTitle">
+          <div class="block-head">
+            <h2 id="picksTitle">精选线索推荐</h2>
+            <span class="sub">按可核对程度排序</span>
+          </div>
+          <div class="feature-layout">
+            <article class="feature-main">
+              <img src="https://picsum.photos/seed/wuyibaoliao-1/720/400" width="720" height="400" loading="lazy" alt="黄山汤口镇街边民宿招牌与价格公示牌">
+              <div class="inner">
+                <span class="badge warn">重点跟进</span>
+                <h3>汤口镇民宿“到店加价”条款：3 家已改，4 家仍在</h3>
+                <p>11 月 2 日有游客在小红书晒出订单截图，显示预订价 612 元、到店被要求补 200 元“旺季服务费”。11 月 6 日 18:40，汤口镇民宿协会发布说明，称 3 家客栈取消该条款并退还差价，另 4 家以“平台底价过低”为由未调整。核对时看订单页是否写明“到店另付”。</p>
+                <p class="meta">2026-11-06 18:40 · 核实人：线索组 · 证据：订单截图 2 张、协会说明 1 份</p>
+              </div>
+            </article>
+            <div class="feature-side">
+              <div class="mini-item">
+                <span class="dot"></span>
+                <div>
+                  <h4>西湖断桥分时段预约细则</h4>
+                  <p class="meta">11月5日 · 官方预约页 · 6 个时段</p>
+                </div>
+              </div>
+              <div class="mini-item">
+                <span class="dot"></span>
+                <div>
+                  <h4>洛阳老城十字街称重摊位换牌进度</h4>
+                  <p class="meta">11月7日 · 城管回复 · 已换 18 户</p>
+                </div>
+              </div>
+              <div class="mini-item">
+                <span class="dot"></span>
+                <div>
+                  <h4>云台山红石峡票量收紧到 8000</h4>
+                  <p class="meta">11月4日 · 景区公告 · 含退票规则</p>
+                </div>
+              </div>
+              <div class="mini-item">
+                <span class="dot"></span>
+                <div>
+                  <h4>大理古城电动车租赁押金退还周期</h4>
+                  <p class="meta">11月3日 · 商户口述 · 待核实</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="block" id="updates" aria-labelledby="updatesTitle">
+          <div class="block-head">
+            <h2 id="updatesTitle">最新更新</h2>
+            <span class="sub">按时间倒序，可核对事件</span>
+          </div>
+          <div class="updates">
+            <div class="update-row">
+              <time datetime="2026-11-07T09:20">11月7日 09:20</time>
+              <span class="t">淄博八大局市场管理方回应称，A17—A24 摊位已完成按份标价换牌，海鲜类不再按斤报价。</span>
+              <span class="src">市场管理方回复</span>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-06T18:40">11月6日 18:40</time>
+              <span class="t">汤口镇民宿协会说明：3 家客栈取消“到店加价”，退还差价共 1240 元。</span>
+              <span class="src">协会公开说明</span>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-05T14:05">11月5日 14:05</time>
+              <span class="t">西湖景区预约页新增断桥 17:00—18:00 时段，单时段上限 12000 人次。</span>
+              <span class="src">官方预约页版本对比</span>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-04T10:30">11月4日 10:30</time>
+              <span class="t">云台山红石峡公告将单时段票量从 10000 调整为 8000，退票免手续费延长至发车前 3 小时。</span>
+              <span class="src">景区公告原文</span>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-03T16:45">11月3日 16:45</time>
+              <span class="t">大理古城 3 家电动车租赁商户口述押金退还周期由 7 天改为 15 天，尚无书面说明。</span>
+              <span class="src">商户电话口述</span>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-01T08:10">11月1日 08:10</time>
+              <span class="t">洛阳老城十字街称重摊位集中换牌，城管通报已换 18 户，剩余 6 户限 11 月 10 日前完成。</span>
+              <span class="src">城管通报</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="block" id="channels" aria-labelledby="channelsTitle">
+          <div class="block-head">
+            <h2 id="channelsTitle">分类入口</h2>
+            <span class="sub">按出行环节查找</span>
+          </div>
+          <div class="cat-index">
+            <a href="/#deep">景区分时预约<span>12</span></a>
+            <a href="/#guide">住宿退改条款<span>9</span></a>
+            <a href="/#faq">餐饮称重价目<span>7</span></a>
+            <a href="/#updates">高速免费时段<span>5</span></a>
+            <a href="/#picks">门票索道价格<span>8</span></a>
+            <a href="/#related">停车与接驳<span>6</span></a>
+            <a href="/#rank">投诉与退款<span>11</span></a>
+            <a href="/#guide">雨天备选方案<span>4</span></a>
+            <a href="/#faq">儿童与老人票<span>6</span></a>
+            <a href="/#updates">跨城高铁余票<span>7</span></a>
+            <a href="/#related">露营场地收费<span>5</span></a>
+            <a href="/#deep">古镇夜游排队<span>9</span></a>
+          </div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="block" id="deep" aria-labelledby="deepTitle">
+          <div class="deep">
+            <h2 id="deepTitle">深度解析：涨价与限流，哪条线索先看</h2>
+            <p class="byline">整理时间 2026-11-08 · 覆盖 9 个目的地 · 引用 6 份原始页面</p>
+
+            <h3>住宿“到店加价”集中在 4 月 20 日之后的订单</h3>
+            <p>把汤口镇、大理古城、洛阳老城三地共 23 条住宿订单截图按预订日期排开，能看到一个明显断点：4 月 18 日之前下单的 9 单里，没有一单出现“到店另付”；4 月 20 日之后下单的 14 单里，有 5 单在订单页底部多出一行小字。差价从 120 元到 280 元不等，汤口镇那单最高，标间补 200 元。</p>
+            <div class="verdict"><b>判断：</b>加价条款与下单时间高度相关，与房价本身关系不大。同一家客栈 4 月 15 日成交价 580 元未加价，4 月 25 日成交价 660 元却要补 200 元，说明触发条件是预订时点，而非房间档位。</div>
+            <p>商家给出的解释是平台把“底价”压到 400 元以下，只能靠到店补差。这个说法能解释一部分账，但解释不了为什么 4 月 25 日那单房价已经比 4 月 15 日高 80 元仍要补差。核对方法很直接：订单页如果出现“到店另付”“旺季服务费”字样，截图保存，再向平台客服要一份书面确认。</p>
+
+            <h3>限流票量公告与实际入口不一致，差 2000 张</h3>
+            <p>11 月 4 日云台山红石峡公告写单时段 8000 人次，但 11 月 5 日 14:00 打开预约小程序，选择 8:00—9:00 时段，页面显示余票 10000。到 11 月 6 日同一时段页面才变成 8000。景区售票处电话回应：4 日的公告先发，系统参数 5 日下午才改完，中间这一天多出来的 2000 张票照常核销。</p>
+            <p>这类时间差在假期前很常见。西湖断桥 11 月 5 日新增 17:00—18:00 时段，页面上限 12000，但当天 16:00 前已售出 11800 张，等于开放即接近满额。游客看到“新增时段”就以为票源宽松，实际只是把原本挤在 16:30 前的人分流到后面。</p>
+            <div class="verdict"><b>判断：</b>“新增时段”不等于“余票充足”。核对时看两个数：该时段总放票量、当前已售量，两个数都显示才算数。</div>
+
+            <h3>称重改按份，价目表换了但称还在</h3>
+            <p>淄博八大局市场 11 月 7 日的回应明确 A17—A24 已换牌。11 月 8 日上午按摊位号逐个看，8 个摊位有 6 个换了新价目牌，A19 和 A22 仍挂旧牌，牌上写“时价”。摊主说新牌子印刷没到。市场管理方给的期限是 11 月 10 日。</p>
+            <p>洛阳老城十字街的情况不同：18 户换牌后，其中 5 户仍保留电子秤，价目牌写“按份”，秤上显示的却是斤数。城管通报只要求“明码标价”，没规定必须撤秤。两种做法在规则上都过关，但对游客来说，看到秤就容易以为还能按斤砍价，实际结算按份。</p>
+            <div class="checklist">
+              <p style="margin-bottom:6px;"><strong>可核对结构：同一摊位三项信息是否一致</strong></p>
+              <ul>
+                <li>价目牌：写“份”还是写“斤”</li>
+                <li>计量工具：秤是否在台面上、是否归零</li>
+                <li>结算小票：单价栏的数字与价目牌对不对得上</li>
+              </ul>
+            </div>
+
+            <h3>雨天备选方案里，退票规则差别最大</h3>
+            <p>山区景区遇雨临时关闭索道时，云台山按“未使用全额退”，黄山玉屏楼索道按“已检票不退、未检票退 80%”，西湖游船则按“开船前 2 小时可退”。同样是下雨，三条规则给出的结果差出一半以上。11 月 2 日黄山那场雨，有游客在检票口被拦下后才发现票面小字写了不退。</p>
+            <p>判断哪条线索值得先看，标准不是声音大小，而是“能不能在出发前改变决定”。住宿加价条款下单前就能看到，优先级最高；限流票量在出发前一晚还能查，排第二；雨天退票规则属于事后才知道，只能提前读票面小字。按这个顺序核对，二十分钟足够。</p>
+          </div>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="block" id="guide" aria-labelledby="guideTitle">
+          <div class="block-head">
+            <h2 id="guideTitle">体验指南：出发前四步核对</h2>
+            <span class="sub">每步都有可查的页面</span>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <h4>查预约余票</h4>
+              <p>打开景区官方预约页，记下所选时段的总放票量和剩余量，两个数都截图。云台山、西湖、黄山三处页面在 11 月 5 日前后都有版本变化。</p>
+            </div>
+            <div class="step">
+              <h4>读订单小字</h4>
+              <p>住宿订单拉到最底部，找“到店另付”“不可取消”“旺季服务费”。4 月 20 日之后下的单，出现概率明显更高。</p>
+            </div>
+            <div class="step">
+              <h4>对价目牌</h4>
+              <p>餐饮摊位看牌上写“份”还是“斤”，再看台面有没有秤。淄博八大局 A19、A22 到 11 月 8 日仍挂旧牌。</p>
+            </div>
+            <div class="step">
+              <h4>存退改规则</h4>
+              <p>索道、游船、演出票面小字各拍一张。黄山玉屏楼索道与西湖游船的退票比例差 20 个百分点以上。</p>
+            </div>
+          </div>
+          <div class="quote" style="margin-top:var(--sp-4);">
+            “我们镇上 11 月 6 日开会，要求所有客栈把到店另付的条款从订单页删掉。做不到的，协会名单上会标出来。”
+            <footer>—— 汤口镇民宿协会一名工作人员，2026-11-06 电话口述，转述内容未逐字核对</footer>
+          </div>
+        </section>
+
+        <!-- 对照面板 -->
+        <section class="block" id="compare" aria-labelledby="compareTitle">
+          <div class="block-head">
+            <h2 id="compareTitle">三处目的地规则对照</h2>
+            <span class="sub">同一件事的不同处理</span>
+          </div>
+          <div class="compare">
+            <div class="left">
+              <h3>云台山 · 红石峡</h3>
+              <ul>
+                <li>单时段票量：8000（11月4日公告）</li>
+                <li>系统实际参数：11月5日下午才改</li>
+                <li>退票：未使用全额退，发车前 3 小时免手续费</li>
+                <li>雨天：索道停运按未使用处理</li>
+              </ul>
+            </div>
+            <div class="right">
+              <h3>黄山 · 玉屏楼索道</h3>
+              <ul>
+                <li>单时段票量：4500</li>
+                <li>预约入口与索道票分开销售</li>
+                <li>退票：已检票不退，未检票退 80%</li>
+                <li>雨天：停运需到索道口登记后退</li>
+              </ul>
+            </div>
+          </div>
+          <p style="margin-top:14px;font-size:13.5px;color:var(--muted);">第三处西湖断桥以时段预约为主，不设索道，退改随游船票走，开船前 2 小时可退。三处规则分别来自各自公告页，11 月 8 日可查。</p>
+        </section>
+
+        <!-- FAQ -->
+        <section class="block" id="faq" aria-labelledby="faqTitle">
+          <div class="block-head">
+            <h2 id="faqTitle">常见问题</h2>
+            <span class="sub">按提问频率排列</span>
+          </div>
+          <details class="faq" open>
+            <summary>五一高速免费时段从几点到几点？</summary>
+            <div class="ans">免费时段以驶离高速出口的时间为准，不是入口时间。2026 年五一按 5 月 1 日 0 时至 5 月 5 日 24 时执行，7 座及以下小客车适用。若在免费开始前上高速、免费开始后下高速，全程免费；反过来则全程收费。</div>
+          </details>
+          <details class="faq">
+            <summary>景区分时预约错过时段还能进吗？</summary>
+            <div class="ans">多数景区允许顺延到相邻时段，但云台山红石峡 11 月 4 日公告写明“过期 30 分钟作废”，黄山玉屏楼允许顺延 1 小时。预约页底部一般有小字说明，下单前拉到最底看一眼比到闸机口争执省事。</div>
+          </details>
+          <details class="faq">
+            <summary>民宿订单写着“到店另付”合法吗？</summary>
+            <div class="ans">订单页明示的费用属于双方约定内容，前提是下单前能看到。若下单时页面未显示、到店才提出，游客可要求按订单金额结算。汤口镇 11 月 6 日已有 3 家退还差价，共 1240 元。</div>
+          </details>
+          <details class="faq">
+            <summary>餐饮摊位按份标价后还能按斤买吗？</summary>
+            <div class="ans">摊位换牌后以牌面标价为准。淄博八大局 A17—A24 已完成换牌，A19、A22 到 11 月 8 日仍挂旧牌，牌上写“时价”，结算前先问一句按份还是按斤，并看清电子秤是否归零。</div>
+          </details>
+          <details class="faq">
+            <summary>索道遇雨停运，票怎么退？</summary>
+            <div class="ans">云台山按未使用全额退，发车前 3 小时免手续费；黄山玉屏楼已检票不退、未检票退 80%；西湖游船开船前 2 小时可退。三家规则在各自票面或公告页都有原文，拍照留存最稳妥。</div>
+          </details>
+          <details class="faq">
+            <summary>古镇夜游排队一般多久？</summary>
+            <div class="ans">11 月 8 日记录的 9 条夜游线索里，洛阳老城十字街 19:00—20:00 排队 25—40 分钟，淄博八大局 20:00 后回落到 10 分钟以内。排队时长与入口数量直接相关，单入口的古镇比双入口多等一倍时间。</div>
+          </details>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="block" id="comments" aria-labelledby="commentsTitle">
+          <div class="block-head">
+            <h2 id="commentsTitle">用户评论与现场反馈</h2>
+            <span class="sub">含中性记录与质疑</span>
+          </div>
+          <div class="comments">
+            <div class="cmt">
+              <div class="who"><span class="av">陈</span>陈先生 · 11月6日</div>
+              汤口镇那家我订过，订单页最下面确实有一行小字，当时没注意。补了 200 元，退了 1240 元名单里有我这一单，钱是 11 月 7 日到账的。
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">林</span>林女士 · 11月5日</div>
+              西湖断桥新加的 17 点那个时段，我 16 点看的时候只剩 200 张，<span class="target">“新增时段”标题</span>看着不少，实际没啥余票，容易误导。
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">赵</span>赵先生 · 11月8日</div>
+              <span class="target">淄博 A19 摊位</span>还挂着“时价”的旧牌子，问摊主说新牌没印好。称还在台面上，但结算按份，价目算清楚，过程有点别扭。
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">王</span>王女士 · 11月4日</div>
+              云台山 4 日公告写 8000，我 5 日早上刷到 10000，当时还以为是加票了。<span class="target">系统参数比公告晚一天改</span>，这中间的票照常核销，公告的可信度要打折。
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">周</span>周同学 · 11月7日</div>
+              信息挺细，但<span class="target">洛阳十字街</span>只写了 18 户换牌，哪 5 户还留着秤没写清，出门前还是得自己一个个看。
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">吴</span>吴先生 · 11月3日</div>
+              <span class="target">大理古城电动车押金</span>说 7 天改 15 天，我 11 月 1 日退的车，到现在还没到账，商家说是“节假日顺延”，跟口述的 15 天又对不上。
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="block" id="news" aria-labelledby="newsTitle">
+          <div class="block-head">
+            <h2 id="newsTitle">相关资讯</h2>
+            <span class="sub">来自公开页面与通告</span>
+          </div>
+          <div class="news-list">
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/wuyibaoliao-2/176/132" width="176" height="132" loading="lazy" alt="铁路车站候车厅大屏显示五一加开列车信息">
+              <div>
+                <h4>长三角铁路五一加开 62 对临客</h4>
+                <p class="meta">11月6日 · 铁路公告 · 含上海虹桥至黄山北 4 对</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/wuyibaoliao-3/176/132" width="176" height="132" loading="lazy" alt="高速公路服务区停车场车辆排队">
+              <div>
+                <h4>高速服务区充电桩排队时段公布</h4>
+                <p class="meta">11月5日 · 运营方数据 · 10:00—12:00 最挤</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/wuyibaoliao-4/176/132" width="176" height="132" loading="lazy" alt="古镇夜游入口处排队人群与灯笼">
+              <div>
+                <h4>洛阳老城十字街夜游入口增至 3 处</h4>
+                <p class="meta">11月2日 · 城管通报 · 排队时长预计缩短</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/wuyibaoliao-5/176/132" width="176" height="132" loading="lazy" alt="民宿前台放置的价格公示牌与订单打印件">
+              <div>
+                <h4>大理古城 12 家民宿上线退改承诺</h4>
+                <p class="meta">11月4日 · 平台页面 · 承诺提前 48 小时可退</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 相关推荐（标签索引） -->
+        <section class="block" id="related" aria-labelledby="relatedTitle">
+          <div class="block-head">
+            <h2 id="relatedTitle">相关推荐</h2>
+            <span class="sub">按搜索词聚合</span>
+          </div>
+          <div class="tags">
+            <a href="/#deep">黄山汤口镇民宿到店加价</a>
+            <a href="/#deep">云台山红石峡预约票量</a>
+            <a href="/#faq">西湖断桥分时段预约</a>
+            <a href="/#updates">淄博八大局按份标价</a>
+            <a href="/#guide">五一高速免费时段规则</a>
+            <a href="/#compare">玉屏楼索道退票比例</a>
+            <a href="/#updates">洛阳十字街称重换牌</a>
+            <a href="/#faq">古镇夜游排队时间</a>
+            <a href="/#news">长三角加开临客</a>
+            <a href="/#guide">雨天备选方案退票</a>
+          </div>
+        </section>
+
+        <!-- 榜单 -->
+        <section class="block" id="rank" aria-labelledby="rankTitle">
+          <div class="block-head">
+            <h2 id="rankTitle">本周线索热度榜</h2>
+            <span class="sub">按核对次数，非口碑排名</span>
+          </div>
+          <div class="rank">
+            <ol>
+              <li>汤口镇民宿“到店加价”条款 <span class="note">核对 38 次</span></li>
+              <li>云台山红石峡票量公告与系统差 2000 <span class="note">核对 31 次</span></li>
+              <li>淄博八大局 A19、A22 仍挂旧牌 <span class="note">核对 27 次</span></li>
+              <li>西湖断桥新增时段余票不多 <span class="note">核对 22 次</span></li>
+              <li>黄山玉屏楼索道雨天退 80% <span class="note">核对 19 次</span></li>
+              <li>大理古城电动车押金 15 天 <span class="note">核对 14 次</span></li>
+              <li>洛阳十字街 5 户留秤按份结算 <span class="note">核对 11 次</span></li>
+            </ol>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side" aria-label="侧栏导航与说明">
+        <div class="side-card">
+          <h3>本页导航</h3>
+          <nav class="side-nav" id="sideNav" aria-label="侧栏栏目导航">
+            <a href="/#overview">假期概览</a>
+            <a href="/#picks">精选线索</a>
+            <a href="/#updates">最新更新</a>
+            <a href="/#channels">分类入口</a>
+            <a href="/#deep">深度解析</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#compare">规则对照</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">用户评论</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#rank">热度榜</a>
+          </nav>
+        </div>
+        <div class="side-card">
+          <h3>可信度分层</h3>
+          <p class="tiny" style="margin-bottom:6px;"><span class="badge ok">已核实</span>有官方页面或原文可查</p>
+          <p class="tiny" style="margin-bottom:6px;"><span class="badge">待比对</span>单方回应，未见第二来源</p>
+          <p class="tiny" style="margin-bottom:6px;"><span class="badge warn">有争议</span>双方说法不一致</p>
+          <p class="tiny" style="margin-bottom:0;"><span class="badge">推测</span>由截图或口述推断，未证实</p>
+        </div>
+        <div class="side-card">
+          <h3>记录口径</h3>
+          <p class="tiny" style="margin-bottom:0;">日期均在 2026 年 11 月 8 日及此前 30 天内。景点、摊位、订单金额为示例整理，引用时请以原始页面为准。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brandline">
+          <svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#f2a93b"></rect>
+            <path d="M16 44 L32 14 L48 44 Z" fill="none" stroke="#12253a" stroke-width="5" stroke-linejoin="round"></path>
+            <circle cx="32" cy="47" r="5.5" fill="#12253a"></circle>
+          </svg>
+          <span class="name">五一轻量版爆料网</span>
+        </div>
+        <p style="margin-bottom:0;">假期前把容易踩坑的条款摊开，标时间、标来源、标回应。</p>
+      </div>
+      <div>
+        <h4>栏目入口</h4>
+        <ul>
+          <li><a href="/#overview">假期概览</a></li>
+          <li><a href="/#picks">精选线索</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>查找方向</h4>
+        <ul>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#rank">热度榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li>条目为示例整理</li>
+          <li>金额、日期以原文为准</li>
+          <li>引用需回查原始页面</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>页面更新时间 2026-11-08，对应正文“最新更新”栏 11 月 1 日至 11 月 7 日记录。</span>
+      <span>© 2026 五一轻量版爆料网 · 示例内容，不构成出行建议</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "五一轻量版爆料网",
+  "description": "汇总2026年五一假期前的出行、景区限流、住宿涨价与消费避坑线索，按时间与可信度分层整理。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "五一高速免费时段从几点到几点？",
+      "acceptedAnswer": {"@type": "Answer", "text": "免费时段以驶离高速出口的时间为准。2026年五一按5月1日0时至5月5日24时执行，7座及以下小客车适用。"}
+    },
+    {
+      "@type": "Question",
+      "name": "景区分时预约错过时段还能进吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "多数景区允许顺延到相邻时段，云台山红石峡公告写明过期30分钟作废，黄山玉屏楼允许顺延1小时，以预约页底部小字为准。"}
+    },
+    {
+      "@type": "Question",
+      "name": "民宿订单写着到店另付合法吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "订单页明示的费用属于双方约定内容，前提是下单前能看到。下单时未显示、到店才提出的，游客可要求按订单金额结算。"}
+    },
+    {
+      "@type": "Question",
+      "name": "餐饮摊位按份标价后还能按斤买吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "以牌面标价为准。淄博八大局A17至A24已完成换牌，A19、A22仍挂旧牌，结算前先确认按份还是按斤。"}
+    },
+    {
+      "@type": "Question",
+      "name": "索道遇雨停运票怎么退？",
+      "acceptedAnswer": {"@type": "Answer", "text": "云台山按未使用全额退，黄山玉屏楼已检票不退、未检票退80%，西湖游船开船前2小时可退。"}
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainnav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=980){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var topBtn=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>420){topBtn.classList.add('show');}else{topBtn.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  topBtn.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets=sideLinks.map(function(a){
+    var id=a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          sideLinks.forEach(function(l){l.classList.remove('active');});
+          var i=targets.indexOf(en.target);
+          if(i>-1){sideLinks[i].classList.add('active');}
+        }
+      });
+    },{rootMargin:'-120px 0px -60% 0px',threshold:0});
+    targets.forEach(function(t){if(t){io.observe(t);}});
+  }
+
+  var searchInput=document.getElementById('siteSearch');
+  var searchBtn=document.getElementById('searchBtn');
+  var fb=document.getElementById('searchFeedback');
+  var fbText=document.getElementById('searchFeedbackText');
+  var searchIndex=[
+    {t:'黄山汤口镇民宿到店加价',id:'deep'},
+    {t:'云台山红石峡预约票量',id:'deep'},
+    {t:'西湖断桥分时段预约',id:'updates'},
+    {t:'淄博八大局按份标价',id:'updates'},
+    {t:'五一高速免费时段规则',id:'faq'},
+    {t:'玉屏楼索道退票比例',id:'compare'},
+    {t:'洛阳十字街称重换牌',id:'updates'},
+    {t:'古镇夜游排队时间',id:'faq'},
+    {t:'雨天备选方案退票',id:'guide'},
+    {t:'大理古城电动车押金',id:'comments'},
+    {t:'长三角加开临客',id:'news'},
+    {t:'可信度分层说明',id:'overview'}
+  ];
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function doSearch(){
+    var q=(searchInput.value||'').trim();
+    if(!q){
+      fbText.innerHTML='输入景区、住宿、价格或条款关键词再查找。';
+      fb.classList.add('on');
+      return;
+    }
+    var hits=searchIndex.filter(function(it){return it.t.indexOf(q)>-1;});
+    if(hits.length===0){
+      fbText.innerHTML='没有找到与 <b>'+esc(q)+'</b> 直接对应的条目。可以换用“'+esc(q.slice(0,2))+'”这类更短的词，或从分类入口逐项查找。';
+    }else{
+      fbText.innerHTML='找到 '+hits.length+' 条相关条目：'+hits.map(function(it){
+        return '<a href="/#'+it.id+'">'+esc(it.t)+'</a>';
+      }).join(' · ');
+    }
+    fb.classList.add('on');
+  }
+  if(searchBtn){searchBtn.addEventListener('click',doSearch);}
+  if(searchInput){
+    searchInput.addEventListener('keydown',function(e){
+      if(e.key==='Enter'){e.preventDefault();doSearch();}
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蕾丝猫-手作蕾丝猫服饰与养护图鉴</title>
+<meta name="description" content="蕾丝猫是一个专注蕾丝猫手作服饰、领结与居家配件的原创图鉴站，收录48套可复刻的蕾丝猫服装版型、12条养护细则与真实买家反馈，按月更新尺寸对照表与面料选购清单，帮助猫主人挑到合身又耐穿的小衣服。">
+<meta name="keywords" content="蕾丝猫">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f6e9f0'/%3E%3Cpath d='M18 24l6 10h16l6-10-4 14H22z' fill='%23b4577e'/%3E%3Ccircle cx='25' cy='30' r='2.4' fill='%233b2b33'/%3E%3Ccircle cx='39' cy='30' r='2.4' fill='%233b2b33'/%3E%3Cpath d='M27 40q5 4 10 0' stroke='%233b2b33' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --pink-900:#4a2434;
+  --pink-700:#8f3f63;
+  --pink-500:#b4577e;
+  --pink-200:#f0cddc;
+  --pink-50:#fbf3f7;
+  --cream:#fffaf6;
+  --ink:#33272c;
+  --ink-soft:#6a5a62;
+  --line:#e8d6de;
+  --gold:#b98a3c;
+  --green:#3f6b52;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(74,36,52,.08);
+  --shadow-lg:0 10px 30px rgba(74,36,52,.13);
+  --space:clamp(14px,2.2vw,26px);
+  --max:1180px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --announce-h:42px;
+  --header-h:64px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--cream);
+  line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--pink-700);text-decoration:none;}
+a:hover{text-decoration:underline;}
+:focus-visible{outline:3px solid var(--pink-500);outline-offset:2px;border-radius:4px;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--space);}
+h1,h2,h3,h4{line-height:1.3;margin:0 0 .5em;color:var(--pink-900);}
+h2{font-size:clamp(1.28rem,2.4vw,1.6rem);}
+h3{font-size:clamp(1.05rem,1.8vw,1.18rem);}
+p{margin:0 0 1em;}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* 公告条 + 页头 吸顶 */
+.sticky-top{position:sticky;top:0;z-index:60;}
+.announce{
+  background:linear-gradient(90deg,var(--pink-900),var(--pink-700));
+  color:#fff;font-size:.83rem;min-height:var(--announce-h);
+  display:flex;align-items:center;
+}
+.announce .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;text-align:center;padding-top:4px;padding-bottom:4px;}
+.announce strong{background:rgba(255,255,255,.18);padding:1px 8px;border-radius:999px;font-weight:600;letter-spacing:.02em;}
+.announce a{color:#ffe6f0;text-decoration:underline;text-underline-offset:2px;}
+
+header.site{
+  background:rgba(255,250,246,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);min-height:var(--header-h);
+  display:flex;align-items:center;box-shadow:var(--shadow);
+}
+.head-inner{display:flex;align-items:center;gap:18px;width:100%;padding-top:6px;padding-bottom:6px;}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:var(--pink-900);letter-spacing:.02em;}
+.brand:hover{text-decoration:none;}
+.brand svg{width:38px;height:38px;flex:0 0 auto;}
+nav.main-nav{margin-left:auto;}
+nav.main-nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;flex-wrap:wrap;}
+nav.main-nav a{
+  display:inline-block;padding:7px 10px;border-radius:var(--radius-sm);
+  font-size:.9rem;color:var(--ink-soft);font-weight:500;white-space:nowrap;
+}
+nav.main-nav a:hover{background:var(--pink-50);color:var(--pink-700);text-decoration:none;}
+nav.main-nav a.active{color:var(--pink-700);background:var(--pink-50);}
+.menu-btn{
+  display:none;margin-left:auto;background:var(--pink-50);border:1px solid var(--line);
+  color:var(--pink-900);padding:8px 12px;border-radius:var(--radius-sm);font-size:.9rem;
+  cursor:pointer;font-family:inherit;
+}
+.search-box{position:relative;margin-left:8px;}
+.search-box input{
+  width:170px;padding:7px 10px 7px 30px;border:1px solid var(--line);border-radius:999px;
+  font-family:inherit;font-size:.86rem;background:#fff;color:var(--ink);
+}
+.search-box input:focus{border-color:var(--pink-500);}
+.search-box svg{position:absolute;left:9px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--ink-soft);}
+.search-feedback{
+  font-size:.82rem;color:var(--pink-700);position:absolute;top:100%;left:0;right:0;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:6px 10px;margin-top:4px;display:none;z-index:20;box-shadow:var(--shadow);
+}
+.search-feedback.show{display:block;}
+
+.hero{
+  position:relative;overflow:hidden;padding:clamp(30px,5vw,62px) 0 clamp(26px,4vw,48px);
+  background:
+    radial-gradient(900px 320px at 82% -40px,rgba(240,205,220,.55),transparent 70%),
+    linear-gradient(180deg,var(--pink-50),var(--cream) 80%);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,4vw,52px);align-items:center;}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.14em;
+  color:var(--pink-700);font-weight:600;text-transform:uppercase;margin-bottom:14px;
+}
+.kicker::before{content:"";width:26px;height:1px;background:var(--pink-500);}
+.hero h1{font-size:clamp(2rem,4.6vw,3.1rem);letter-spacing:.02em;margin-bottom:.35em;}
+.hero .lede{font-size:clamp(.98rem,1.5vw,1.08rem);color:var(--ink-soft);max-width:33em;margin-bottom:18px;}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin:20px 0 26px;padding:0;list-style:none;}
+.hero-facts li{font-size:.86rem;color:var(--ink-soft);}
+.hero-facts b{display:block;font-size:1.5rem;color:var(--pink-900);line-height:1.2;font-variant-numeric:tabular-nums;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:999px;font-size:.94rem;font-weight:600;
+  background:var(--pink-700);color:#fff;border:1px solid var(--pink-700);transition:transform .15s,box-shadow .15s;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-lg);}
+.btn.ghost{background:transparent;color:var(--pink-700);}
+.hero-art{position:relative;display:flex;justify-content:center;}
+.hero-art svg{width:100%;max-width:400px;height:auto;filter:drop-shadow(0 14px 26px rgba(74,36,52,.14));}
+
+main{display:block;}
+section[id]{scroll-margin-top:calc(var(--announce-h) + var(--header-h) + 12px);}
+.block{padding:clamp(30px,4.6vw,54px) 0;border-bottom:1px solid var(--line);}
+.block:last-of-type{border-bottom:0;}
+.block-head{margin-bottom:clamp(18px,3vw,30px);}
+.block-head .tag{font-size:.76rem;letter-spacing:.16em;color:var(--gold);font-weight:700;display:block;margin-bottom:6px;}
+.block-head p{color:var(--ink-soft);max-width:46em;margin:0;}
+.layout-2col{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(20px,3.4vw,44px);align-items:start;}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.ov-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;
+  box-shadow:var(--shadow);
+}
+.ov-card .num{font-size:1.7rem;font-weight:700;color:var(--pink-700);font-variant-numeric:tabular-nums;line-height:1.1;}
+.ov-card h3{font-size:.98rem;margin:6px 0 4px;}
+.ov-card p{font-size:.84rem;color:var(--ink-soft);margin:0;}
+.ov-note{
+  margin-top:18px;background:var(--pink-50);border-left:3px solid var(--pink-500);
+  padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:.9rem;
+}
+
+/* 精选卡片 */
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.pick{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--shadow);
+}
+.pick img{aspect-ratio:4/3;width:100%;object-fit:cover;}
+.pick .pick-body{padding:15px 17px 17px;display:flex;flex-direction:column;flex:1;}
+.pick h3{font-size:1rem;margin:0 0 6px;}
+.pick p{font-size:.86rem;color:var(--ink-soft);margin:0 0 12px;}
+.meta{
+  display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.76rem;color:var(--ink-soft);
+  margin-top:auto;padding-top:8px;border-top:1px dashed var(--line);
+}
+.badge{
+  display:inline-block;font-size:.72rem;padding:1px 8px;border-radius:999px;
+  background:var(--pink-50);color:var(--pink-700);border:1px solid var(--pink-200);
+}
+.badge.fact{background:#eef4ef;color:var(--green);border-color:#cfe0d5;}
+.badge.opinion{background:#fdf4e6;color:#8a621e;border-color:#f0dcb8;}
+
+/* 最新更新列表 */
+.updates{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);}
+.updates li{
+  display:grid;grid-template-columns:86px 1fr auto;gap:14px;align-items:baseline;
+  padding:13px 4px;border-bottom:1px solid var(--line);font-size:.92rem;
+}
+.updates time{color:var(--ink-soft);font-size:.8rem;font-variant-numeric:tabular-nums;}
+.updates .u-title{font-weight:600;color:var(--pink-900);}
+.updates .u-desc{color:var(--ink-soft);font-size:.85rem;display:block;font-weight:400;margin-top:2px;}
+
+/* 分类入口 标签索引 */
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none;}
+.chips a{
+  display:inline-block;padding:8px 15px;border-radius:999px;background:#fff;
+  border:1px solid var(--line);font-size:.88rem;color:var(--ink-soft);
+  transition:transform .15s,border-color .15s;
+}
+.chips a:hover{border-color:var(--pink-500);color:var(--pink-700);text-decoration:none;transform:translateY(-2px);}
+.chips a b{color:var(--pink-700);font-weight:600;margin-left:4px;font-size:.8rem;}
+
+/* 深度解析 */
+.deep{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(20px,3vw,36px);box-shadow:var(--shadow);
+}
+.deep h3{margin-top:1.6em;padding-top:.2em;border-top:1px solid var(--line);}
+.deep h3:first-of-type{margin-top:0;border-top:0;padding-top:0;}
+.deep p{font-size:.95rem;}
+.deep .callout{
+  background:var(--pink-50);border:1px solid var(--pink-200);border-radius:var(--radius-sm);
+  padding:14px 18px;margin:18px 0;font-size:.92rem;
+}
+.deep .callout strong{color:var(--pink-700);}
+.deep blockquote{
+  margin:18px 0;padding:12px 18px;border-left:3px solid var(--gold);background:#fdf9ef;
+  font-size:.92rem;color:#5c4a33;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+table.data{width:100%;border-collapse:collapse;font-size:.86rem;margin:16px 0;}
+table.data caption{text-align:left;font-size:.8rem;color:var(--ink-soft);padding-bottom:6px;}
+table.data th,table.data td{border:1px solid var(--line);padding:8px 10px;text-align:left;}
+table.data th{background:var(--pink-50);color:var(--pink-900);font-weight:600;}
+table.data tbody tr:nth-child(even){background:#fdf9fb;}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+.steps li{
+  counter-increment:step;position:relative;padding:0 0 20px 52px;margin:0;
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:0;top:0;
+  width:36px;height:36px;border-radius:50%;background:var(--pink-700);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700;
+  font-variant-numeric:tabular-nums;
+}
+.steps li::after{
+  content:"";position:absolute;left:17px;top:40px;bottom:0;width:2px;background:var(--pink-200);
+}
+.steps li:last-child::after{display:none;}
+.steps h3{font-size:.98rem;margin-bottom:4px;}
+.steps p{font-size:.88rem;color:var(--ink-soft);margin:0;}
+
+/* 侧栏 */
+aside.side{position:sticky;top:calc(var(--announce-h) + var(--header-h) + 16px);}
+.side-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;margin-bottom:18px;box-shadow:var(--shadow);
+}
+.side-card h3{font-size:.92rem;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.side-nav{list-style:none;margin:0;padding:0;font-size:.86rem;}
+.side-nav li{margin:0;}
+.side-nav a{
+  display:block;padding:6px 10px;border-radius:var(--radius-sm);color:var(--ink-soft);
+  border-left:2px solid transparent;
+}
+.side-nav a:hover{background:var(--pink-50);text-decoration:none;}
+.side-nav a.current{color:var(--pink-700);background:var(--pink-50);border-left-color:var(--pink-500);font-weight:600;}
+.side-list{list-style:none;margin:0;padding:0;font-size:.85rem;}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line);}
+.side-list li:last-child{border-bottom:0;padding-bottom:0;}
+.side-list .s-date{display:block;font-size:.74rem;color:var(--ink-soft);}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;}
+.compare > div{padding:18px 20px;}
+.compare .col-a{background:var(--pink-50);border-right:1px solid var(--line);}
+.compare h3{font-size:.95rem;margin-bottom:10px;}
+.compare ul{margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-soft);}
+.compare li{margin-bottom:6px;}
+
+/* FAQ */
+details.faq{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  margin-bottom:10px;overflow:hidden;
+}
+details.faq summary{
+  list-style:none;cursor:pointer;padding:13px 44px 13px 18px;font-weight:600;font-size:.94rem;
+  color:var(--pink-900);position:relative;
+}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:1.15rem;color:var(--pink-500);font-weight:400;transition:transform .2s;
+}
+details.faq[open] summary::after{content:"−";}
+details.faq .faq-body{padding:0 18px 15px;font-size:.89rem;color:var(--ink-soft);}
+details.faq summary:hover{background:var(--pink-50);}
+
+/* 评论 引语卡 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.comment{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;
+  box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;
+}
+.comment::before{content:"“";font-size:2.6rem;line-height:1;color:var(--pink-200);position:absolute;top:8px;right:14px;font-family:Georgia,serif;}
+.comment p{font-size:.89rem;margin:0 0 14px;position:relative;z-index:1;}
+.comment .who{font-size:.79rem;color:var(--ink-soft);margin-top:auto;display:flex;align-items:center;gap:8px;}
+.comment .avatar{
+  width:28px;height:28px;border-radius:50%;background:var(--pink-200);color:var(--pink-900);
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.78rem;flex:0 0 auto;
+}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.news-item{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px;background:#fff;
+}
+.news-item .date{font-size:.76rem;color:var(--gold);font-weight:600;letter-spacing:.04em;}
+.news-item h3{font-size:.95rem;margin:6px 0 4px;}
+.news-item p{font-size:.85rem;color:var(--ink-soft);margin:0;}
+
+/* 相关推荐标签 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:9px;list-style:none;margin:0;padding:0;}
+.tagcloud a{
+  font-size:.85rem;padding:5px 13px;border-radius:var(--radius-sm);
+  background:#fff;border:1px solid var(--line);color:var(--ink-soft);
+}
+.tagcloud a:hover{border-color:var(--pink-500);color:var(--pink-700);text-decoration:none;}
+
+/* 榜单 */
+.rank{list-style:none;margin:0;padding:0;counter-reset:rank;}
+.rank li{
+  counter-increment:rank;display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:center;
+  padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  margin-bottom:10px;
+}
+.rank li::before{
+  content:counter(rank);font-size:1.05rem;font-weight:700;color:var(--pink-200);font-variant-numeric:tabular-nums;
+}
+.rank li:first-child::before{color:var(--gold);}
+.rank .r-title{font-weight:600;font-size:.93rem;color:var(--pink-900);}
+.rank .r-sub{font-size:.8rem;color:var(--ink-soft);display:block;font-weight:400;}
+.rank .r-score{font-size:.82rem;color:var(--pink-700);font-weight:600;font-variant-numeric:tabular-nums;}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--pink-200);margin-left:8px;}
+.timeline li{position:relative;padding:0 0 20px 24px;font-size:.89rem;}
+.timeline li::before{
+  content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:2px solid var(--pink-500);
+}
+.timeline .t-date{font-size:.77rem;color:var(--gold);font-weight:600;display:block;}
+
+/* 页脚 */
+footer.site{
+  background:var(--pink-900);color:#f3dfe8;padding:clamp(30px,4.4vw,52px) 0 26px;margin-top:10px;
+  font-size:.88rem;
+}
+footer.site h3{color:#fff;font-size:.88rem;letter-spacing:.06em;margin-bottom:10px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:clamp(18px,3vw,40px);}
+.foot-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.06rem;color:#fff;margin-bottom:10px;}
+.foot-brand svg{width:32px;height:32px;}
+footer.site p{color:#d9bccb;margin-bottom:8px;font-size:.85rem;}
+footer.site ul{list-style:none;margin:0;padding:0;}
+footer.site ul li{margin-bottom:6px;}
+footer.site ul a{color:#e9c9d8;}
+footer.site ul a:hover{color:#fff;text-decoration:underline;}
+.foot-note{
+  margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);
+  display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;
+  font-size:.78rem;color:#c79cb0;
+}
+#toTop{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--pink-200);
+  background:#fff;color:var(--pink-700);font-size:1.1rem;cursor:pointer;
+  box-shadow:var(--shadow-lg);display:none;align-items:center;justify-content:center;
+  font-family:inherit;
+}
+#toTop.show{display:flex;}
+#toTop:hover{background:var(--pink-50);}
+
+.hl{background:#fff3b0;outline:2px solid #f0c34e;border-radius:3px;}
+
+@media (max-width:1000px){
+  .layout-2col{grid-template-columns:1fr;}
+  aside.side{position:static;order:2;}
+  .layout-2col > .main-col{order:1;}
+  .overview-grid{grid-template-columns:repeat(2,1fr);}
+  .picks{grid-template-columns:repeat(2,1fr);}
+  .comments{grid-template-columns:1fr 1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-art{order:-1;max-width:300px;margin:0 auto;}
+  nav.main-nav{display:none;}
+  nav.main-nav.open{display:block;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg);padding:10px var(--space);}
+  nav.main-nav.open ul{flex-direction:column;gap:2px;}
+  .menu-btn{display:inline-block;}
+  .search-box{margin-left:auto;}
+}
+@media (max-width:640px){
+  body{font-size:15px;}
+  .overview-grid,.picks,.comments,.news-grid{grid-template-columns:1fr;}
+  .compare{grid-template-columns:1fr;}
+  .compare .col-a{border-right:0;border-bottom:1px solid var(--line);}
+  .updates li{grid-template-columns:1fr;gap:2px;}
+  .foot-grid{grid-template-columns:1fr;}
+  .head-inner{flex-wrap:wrap;}
+  .search-box{order:5;width:100%;margin:4px 0 0;}
+  .search-box input{width:100%;}
+  #toTop{right:12px;bottom:12px;width:40px;height:40px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+  .btn:hover{transform:none;}
+  .chips a:hover{transform:none;}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"蕾丝猫","inLanguage":"zh-CN","description":"蕾丝猫手作服饰与养护图鉴，收录可复刻版型、尺寸对照与真实买家反馈。","keywords":"蕾丝猫"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"蕾丝猫衣服的领口松紧留多少才不勒猫？","acceptedAnswer":{"@type":"Answer","text":"成年家猫颈围多在20至24厘米，蕾丝猫领口预留1.5至2厘米余量，且用2.5厘米宽弹力包边，插入两指即可。2026年10月28日验收的17件样品里，余量1厘米的3件出现抓挠领口动作。"}},
+{"@type":"Question","name":"蕾丝面料被猫爪勾丝后怎么修补？","acceptedAnswer":{"@type":"Answer","text":"先判断是钩纱还是断纱。钩纱用钝头针沿原纹路挑回背面；断纱面积小于0.5厘米见方，用同色涤纶线在背面三点定位，正面不穿透。棉质硬蕾丝比化纤软网更耐抓。"}},
+{"@type":"Question","name":"短毛猫和长毛猫的蕾丝猫服饰尺码怎么选？","acceptedAnswer":{"@type":"Answer","text":"短毛猫按净胸围加2厘米，长毛猫按净胸围加4厘米，因为腋下毛发会占体积。11月1日测量的12只长毛猫中，9只按短毛尺码购买后腋下有压痕。"}},
+{"@type":"Question","name":"蕾丝猫配饰能不能长期佩戴？","acceptedAnswer":{"@type":"Answer","text":"领结、蝴蝶结单次佩戴建议不超过2小时，且主人需在场。含金属扣的项圈在猫独处时应取下，防止钩挂。"}},
+{"@type":"Question","name":"手作蕾丝猫衣服一般多少钱算合理？","acceptedAnswer":{"@type":"Answer","text":"单件上衣用料约0.6米，棉质硬蕾丝每米45至70元，加人工与包边，148至228元属常见区间。低于90元的成品需确认是否使用回收面料或化纤软网。"}},
+{"@type":"Question","name":"蕾丝猫服饰洗后变形怎么办？","acceptedAnswer":{"@type":"Answer","text":"30摄氏度以下冷水手洗，不拧干，用毛巾卷吸水后平铺阴干。2026年10月20日实测，机洗甩干后的5件样品中4件花边起波浪。"}}
+]}
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce" role="region" aria-label="站点更新公告">
+    <div class="wrap">
+      <strong>更新</strong>
+      <span>11月6日｜冬季加绒蕾丝猫马甲版型图更新至第7版，胸围对照表新增4个尺码</span>
+      <a href="/#updates">查看变动明细</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap head-inner">
+      <a class="brand" href="/#top" aria-label="蕾丝猫 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="30" fill="#f6e9f0" stroke="#e8d6de"/>
+          <path d="M17 23l7 11h16l7-11-4 15H21z" fill="#b4577e"/>
+          <circle cx="25" cy="29" r="2.6" fill="#3b2b33"/>
+          <circle cx="39" cy="29" r="2.6" fill="#3b2b33"/>
+          <path d="M27 40q5 4 10 0" stroke="#3b2b33" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M12 52h40" stroke="#f0cddc" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>蕾丝猫</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选版型</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+        </ul>
+      </nav>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <label class="sr-only" for="siteSearch">站内搜索</label>
+        <input type="search" id="siteSearch" placeholder="搜版型、面料、尺码" autocomplete="off">
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">手作图鉴 · 2026 冬季版</span>
+      <h1>蕾丝猫</h1>
+      <p class="lede">给猫做小衣服这件事，难点不在审美，在尺寸和面料。这里按胸围、颈围、毛长把版型拆开记录，附上买家实际穿着后的修改意见，方便照着复刻，也方便判断一件成品值不值得买。</p>
+      <ul class="hero-facts">
+        <li><b>48</b>套已转录版型</li>
+        <li><b>12</b>条养护细则</li>
+        <li><b>17</b>件十月验收样品</li>
+        <li><b>4</b>个新增尺码</li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn" href="/#picks">看本月精选版型</a>
+        <a class="btn ghost" href="/#deep">读领口余量拆解</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 360 340" role="img">
+        <defs>
+          <pattern id="lace" width="26" height="26" patternUnits="userSpaceOnUse">
+            <circle cx="13" cy="13" r="8" fill="none" stroke="#f0cddc" stroke-width="1.3"/>
+            <circle cx="13" cy="13" r="3" fill="#f0cddc"/>
+            <path d="M0 26 L26 0" stroke="#f0cddc" stroke-width=".7"/>
+          </pattern>
+        </defs>
+        <ellipse cx="180" cy="312" rx="128" ry="16" fill="rgba(74,36,52,.08)"/>
+        <path d="M118 300c-16-58-10-118 8-150 20-36 48-52 54-52s34 16 54 52c18 32 24 92 8 150z" fill="#fffaf6" stroke="#e8d6de" stroke-width="2"/>
+        <path d="M118 300c-16-58-10-118 8-150 20-36 48-52 54-52s34 16 54 52c18 32 24 92 8 150z" fill="url(#lace)" opacity=".75"/>
+        <path d="M140 100c8-30 22-46 40-46s32 16 40 46" fill="#f6e9f0" stroke="#e8d6de" stroke-width="2"/>
+        <path d="M132 104l14-40 12 26 22-32 22 32 12-26 14 40z" fill="#b4577e" opacity=".92"/>
+        <circle cx="156" cy="132" r="7" fill="#3b2b33"/>
+        <circle cx="204" cy="132" r="7" fill="#3b2b33"/>
+        <path d="M170 152q10 8 20 0" stroke="#3b2b33" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M120 196l-30-14M120 214l-34 2M240 196l30-14M240 214l34 2" stroke="#e8d6de" stroke-width="2" stroke-linecap="round"/>
+        <path d="M150 236h60l-8 26h-44z" fill="#f0cddc"/>
+        <path d="M162 262c0 16 36 16 36 0" fill="none" stroke="#b4577e" stroke-width="2" stroke-dasharray="3 4"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="block" id="overview">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">领域概览</span>
+        <h2>这个领域到底在做什么</h2>
+        <p>围绕家猫的小件服饰与颈饰，涉及版型测量、面料选择、缝制工艺和穿着安全四件事，彼此牵制。下面四个数字是当前图鉴的收录规模。</p>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-card">
+          <div class="num">48</div>
+          <h3>可复刻版型</h3>
+          <p>含背心、披肩、马甲、领结四类，全部标注胸围与颈围区间。</p>
+        </div>
+        <div class="ov-card">
+          <div class="num">7</div>
+          <h3>主流面料</h3>
+          <p>棉质硬蕾丝、软网蕾丝、弹力针织、水溶花边等，耐抓等级分三级。</p>
+        </div>
+        <div class="ov-card">
+          <div class="num">12</div>
+          <h3>养护细则</h3>
+          <p>覆盖清洗水温、阴干方式、勾丝修补与存放折叠，逐条给出理由。</p>
+        </div>
+        <div class="ov-card">
+          <div class="num">2h</div>
+          <h3>单次佩戴上限</h3>
+          <p>领结、蝴蝶结类配饰的通用建议时长，含金属扣件时须主人看护。</p>
+        </div>
+      </div>
+      <div class="ov-note">
+        一个常被忽略的起点：猫的胸围测量要在站立、自然呼吸时贴着腋后绕一圈，软尺不收紧。坐姿测量普遍偏大1到2厘米，照这个数做的衣服腋下容易空。
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="picks">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">精选内容推荐</span>
+        <h2>按体型和毛长挑出来的四套</h2>
+        <p>从十月验收的17件样品里选出复刻成功率高、买家返图修改意见最少的四套，附上关键尺寸与注意点。</p>
+      </div>
+      <div class="picks">
+        <article class="pick">
+          <img src="https://picsum.photos/seed/lacecat-vest1/480/360" width="480" height="360" loading="lazy" alt="米白色棉质硬蕾丝猫背心，胸前有波浪花边，平铺在木桌上">
+          <div class="pick-body">
+            <h3>棉质硬蕾丝双层背心</h3>
+            <p>胸围32至40厘米，双层前片加宽包边。十月样品里返图率最高的一款，长毛猫腋下需加放4厘米。</p>
+            <div class="meta"><span class="badge fact">已复刻11次</span><span>10月28日验收</span></div>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/lacecat-cape/480/360" width="480" height="360" loading="lazy" alt="浅粉色软网蕾丝猫披肩，边缘为水溶花边，挂着珍珠扣">
+          <div class="pick-body">
+            <h3>软网蕾丝开襟披肩</h3>
+            <p>不包腋下，靠一颗珍珠扣固定，适合抗拒穿袖子衣服的猫。软网易勾丝，单次穿着后需检查下摆。</p>
+            <div class="meta"><span class="badge opinion">新手友好</span><span>10月22日上架</span></div>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/lacecat-bow/480/360" width="480" height="360" loading="lazy" alt="深酒红色丝绒蕾丝猫领结，中间缀一枚小花扣，背景为奶油色布料">
+          <div class="pick-body">
+            <h3>丝绒底蕾丝猫领结</h3>
+            <p>颈围20至26厘米，弹力带包边。扣件为布面暗扣，无金属件，独处时也可以保留，但仍建议限时佩戴。</p>
+            <div class="meta"><span class="badge fact">无金属扣件</span><span>10月19日改版</span></div>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/lacecat-coat/480/360" width="480" height="360" loading="lazy" alt="冬季加绒蕾丝猫马甲，内衬为短绒，外侧为奶白色蕾丝，带立领">
+          <div class="pick-body">
+            <h3>加绒蕾丝猫冬季马甲</h3>
+            <p>11月6日更新的第7版，胸围对照表补了44、48厘米两档。内衬短绒要留出1厘米活动量，否则走路会绷。</p>
+            <div class="meta"><span class="badge fact">本月更新</span><span>11月6日发布</span></div>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/lacecat-collar/480/360" width="480" height="360" loading="lazy" alt="白色水溶花边蕾丝猫脖圈，平铺展示，边缘有细密扇贝形花纹">
+          <div class="pick-body">
+            <h3>水溶花边脖圈</h3>
+            <p>纯装饰，不承力，不适合挂牵引绳。宽度2.5厘米，比多数成品更宽，压强小一些。</p>
+            <div class="meta"><span class="badge opinion">仅装饰</span><span>10月15日试制</span></div>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/lacecat-dress/480/360" width="480" height="360" loading="lazy" alt="带蕾丝裙摆的猫用连身小裙，淡紫色，腰间有缎带">
+          <div class="pick-body">
+            <h3>连身蕾丝猫小裙</h3>
+            <p>好看但行动受限最明显的一套。后腿活动幅度低于4厘米的猫穿后不愿走动，建议只在拍照时用。</p>
+            <div class="meta"><span class="badge opinion">拍照用</span><span>10月11日反馈</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="updates">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">最新更新</span>
+        <h2>本周改了什么</h2>
+        <p>版型、尺寸表、面料评级三类内容的变动记录，每条都标了对应文件与验收日期。</p>
+      </div>
+      <ul class="updates">
+        <li>
+          <time datetime="2026-11-06">11月6日</time>
+          <span><span class="u-title">加绒马甲第7版</span><span class="u-desc">胸围对照新增44、48厘米两档，立领高度从4厘米降到3.2厘米，防止顶下巴。</span></span>
+          <span class="badge fact">版型</span>
+        </li>
+        <li>
+          <time datetime="2026-11-04">11月4日</time>
+          <span><span class="u-title">软网蕾丝耐抓评级下调</span><span class="u-desc">从B级调至C级，依据是十月样品中6件软网披肩有4件下摆出现勾丝。</span></span>
+          <span class="badge fact">面料</span>
+        </li>
+        <li>
+          <time datetime="2026-11-02">11月2日</time>
+          <span><span class="u-title">长毛猫测量补充说明</span><span class="u-desc">在尺寸页加了腋下毛发体积的说明：长毛猫净胸围加4厘米，短毛加2厘米。</span></span>
+          <span class="badge fact">尺寸</span>
+        </li>
+        <li>
+          <time datetime="2026-10-30">10月30日</time>
+          <span><span class="u-title">领结暗扣替换记录</span><span class="u-desc">丝绒领结原用的金属按扣全部换成布面暗扣，旧版图片仍保留在档案区。</span></span>
+          <span class="badge fact">工艺</span>
+        </li>
+        <li>
+          <time datetime="2026-10-27">10月27日</time>
+          <span><span class="u-title">养护页新增阴干图示</span><span class="u-desc">补了平铺阴干与悬挂晾干的对比照片，机洗甩干的4件样品花边起波浪情况已拍照存档。</span></span>
+          <span class="badge fact">养护</span>
+        </li>
+        <li>
+          <time datetime="2026-10-23">10月23日</time>
+          <span><span class="u-title">棉质硬蕾丝补货价格</span><span class="u-desc">三家常供店铺的每米价格从45至58元涨到52至70元，成本区间同步更新。</span></span>
+          <span class="badge fact">价格</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="categories">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">分类入口</span>
+        <h2>按用途找，不按好看找</h2>
+        <p>十个入口，每个都对应可核对的具体条目数。披肩和背心解决不同问题，别混着看。</p>
+      </div>
+      <ul class="chips">
+        <li><a href="/#picks">猫用蕾丝背心版型<b>11</b></a></li>
+        <li><a href="/#picks">猫用蕾丝披肩做法<b>8</b></a></li>
+        <li><a href="/#guide">长毛猫蕾丝衣服尺寸<b>6</b></a></li>
+        <li><a href="/#deep">蕾丝领口余量计算<b>4</b></a></li>
+        <li><a href="/#faq">蕾丝面料耐抓等级<b>7</b></a></li>
+        <li><a href="/#deep">棉质硬蕾丝与软网对比<b>5</b></a></li>
+        <li><a href="/#faq">蕾丝猫衣服勾丝修补<b>3</b></a></li>
+        <li><a href="/#guide">猫用领结佩戴时长<b>4</b></a></li>
+        <li><a href="/#updates">冬季加绒马甲尺寸表<b>7</b></a></li>
+        <li><a href="/#guide">蕾丝猫服饰清洗水温<b>6</b></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap layout-2col" style="padding-top:clamp(30px,4.6vw,54px);">
+    <div class="main-col">
+
+      <section class="block" id="deep" style="padding-top:0;border-bottom:0;">
+        <div class="block-head">
+          <span class="tag">深度解析</span>
+          <h2>领口余量为什么是这类衣服的第一道坎</h2>
+          <p>把答案拆成可核对的部分：颈围数据、包边宽度、样品反馈。</p>
+        </div>
+        <article class="deep">
+          <p>猫穿上小衣服后的第一个动作几乎都是低头舔胸，如果领口紧，它抬不起头，就会用后爪扒。所以领口不是收得越贴合越好。成年家猫颈围多数落在20到24厘米，做成衣时预留1.5到2厘米余量，再配2.5厘米宽的弹力包边，是十月样品里表现最稳的组合。</p>
+
+          <h3>一、17件样品的领口余量分布</h3>
+          <p>10月28日验收的17件样品中，余量1厘米的3件全部出现了抓挠领口的动作，其中2件在10分钟内就被猫扒下来。余量1.5厘米的6件里，4件稳定穿着超过20分钟。余量2厘米的5件里，有2件因为太松，猫低头时领口滑到肩部。余量2.5厘米的3件中，2件直接被前爪探进领口撑开。</p>
+          <table class="data">
+            <caption>领口余量 vs 穿着表现（2026年10月28日，样品17件）</caption>
+            <thead>
+              <tr><th>余量</th><th>样品数</th><th>20分钟内稳定</th><th>主要问题</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1.0厘米</td><td>3</td><td>0</td><td>抓挠、扒脱</td></tr>
+              <tr><td>1.5厘米</td><td>6</td><td>4</td><td>轻微调整</td></tr>
+              <tr><td>2.0厘米</td><td>5</td><td>3</td><td>领口滑落至肩</td></tr>
+              <tr><td>2.5厘米</td><td>3</td><td>1</td><td>前爪撑开</td></tr>
+            </tbody>
+          </table>
+
+          <h3>二、软网和棉质硬蕾丝的差别不在好看</h3>
+          <p>同样宽度下，软网的延展性让它在猫低头时跟着移动，余量可以收到1.5厘米；棉质硬蕾丝几乎不延展，余量低于1.8厘米时猫转头会受限。十月评级把软网的耐抓等级从B降到C，原因是6件软网披肩里4件下摆勾丝，但领口这一块，软网反而更宽容。两种材料的结论方向不同，不能用一个等级概括。</p>
+          <div class="callout">
+            <strong>可被反驳的判断：</strong>把“耐抓”当成选面料的首要标准，会让人偏向硬蕾丝，但硬蕾丝在领口上对猫的约束更大。对短毛猫和颈围偏大的猫，软网加宽包边更合适；对会主动扒衣服的猫，硬蕾丝更抗造。两个目标本身冲突。
+          </div>
+
+          <h3>三、说法差异：卖家写的“可调节”究竟调什么</h3>
+          <p>市面上一批标“可调节领口”的领结，实际调节的是背面魔术贴的粘合长度，范围约3厘米。这意味着颈围24厘米的猫，收窄后仍需要至少21厘米的固定圈。11月1日测量的12只猫里，9只按短毛尺码购买后腋下有压痕，其中3只的颈围超过24厘米，调节空间正好用尽。卖家描述里的“可调节”，和猫实际需要的余量不是一回事。</p>
+
+          <blockquote>原话转述：一位买家在10月22日的评价里写“好看是好看，就是它一直用爪子够脖子”。这句指向的是领口，不是花色。同款在10月26日追加了包边加宽版。</blockquote>
+
+          <h3>四、规则的前后变化</h3>
+          <p>较早的版本里，领口余量统一写1厘米，理由是“防止滑脱”。10月30日之后的版型页改成分档：短毛1.5厘米、长毛1.8厘米、颈围超过24厘米的加到2厘米，超过2.2厘米不再加，改为换宽包边。改动依据就是上面那张表的前两行。</p>
+          <p>另一处规则变化在扣件：丝绒领结原来用金属按扣，10月30日全部换成布面暗扣。原因不是金属过敏的推测，而是9月的一件样品在独处时被沙发缝隙勾住，按扣边缘留下了划痕。这个细节没有引发大规模讨论，但改版后的三件复刻品都保留了这个调整。</p>
+        </article>
+      </section>
+
+      <section class="block" id="guide" style="border-bottom:0;">
+        <div class="block-head">
+          <span class="tag">体验指南</span>
+          <h2>从量尺寸到收进衣柜的五步</h2>
+          <p>按顺序做，中间任何一步数不清就回到上一步。这里写的都是能复现的动作。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>站立状态下量三个数</h3>
+            <p>颈围、胸围（腋后最宽处）、背长（颈后到尾巴根）。软尺贴毛不勒。坐姿量出来的胸围普遍大1至2厘米，别用。</p>
+          </li>
+          <li>
+            <h3>按毛长加放量</h3>
+            <p>短毛加2厘米，长毛加4厘米。11月1日的12只长毛猫里，9只按短毛尺码买后腋下有压痕，放量不足是主因。</p>
+          </li>
+          <li>
+            <h3>先选披肩试穿</h3>
+            <p>披肩不包腋下、靠一颗扣固定，是判断猫接不接受衣服的最低成本方式。抗拒穿袖子的猫，多数能接受披肩。</p>
+          </li>
+          <li>
+            <h3>控制单次时长</h3>
+            <p>领结类不超过2小时，衣服类从10分钟起，逐步加到30分钟。出现频繁舔胸或扒领口，先松一格再说。</p>
+          </li>
+          <li>
+            <h3>洗后平铺阴干</h3>
+            <p>30摄氏度以下冷水手洗，不拧干，毛巾卷吸水后平铺。10月20日实测，机洗甩干的5件里4件花边起波浪。</p>
+          </li>
+        </ol>
+        <div class="compare" style="margin-top:26px;">
+          <div class="col-a">
+            <h3>适合做第一件的</h3>
+            <ul>
+              <li>米白棉质硬蕾丝背心，胸围32厘米起</li>
+              <li>软网蕾丝开襟披肩，单扣固定</li>
+              <li>水溶花边脖圈，宽2.5厘米，纯装饰</li>
+            </ul>
+          </div>
+          <div>
+            <h3>建议放到后面的</h3>
+            <ul>
+              <li>连身小裙，后腿活动受限最明显</li>
+              <li>带金属扣的项圈，独处需取下</li>
+              <li>全软网长披肩，下摆易勾丝</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side" aria-label="侧栏导航与速览">
+      <div class="side-card">
+        <h3>本页栏目</h3>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">榜单</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>尺寸速查</h3>
+        <ul class="side-list">
+          <li><strong>颈围 20–24 厘米</strong><span class="s-date">余量 1.5–2 厘米</span></li>
+          <li><strong>胸围 32–40 厘米</strong><span class="s-date">短毛 +2，长毛 +4</span></li>
+          <li><strong>包边宽度 2.5 厘米</strong><span class="s-date">弹力包边，插入两指</span></li>
+          <li><strong>单件用料约 0.6 米</strong><span class="s-date">棉质硬蕾丝 52–70 元/米</span></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>近期验收</h3>
+        <ul class="side-list">
+          <li>10月28日 · 17件样品<a class="s-date" href="/#deep">领口余量分布</a></li>
+          <li>11月1日 · 12只长毛猫<a class="s-date" href="/#faq">腋下压痕记录</a></li>
+          <li>11月6日 · 加绒马甲第7版<a class="s-date" href="/#updates">尺寸表变动</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">常见问答</span>
+        <h2>六个人们真正在问的问题</h2>
+        <p>答案以猫的身体和面料特性为主语，涉及数字的都给出来源日期。</p>
+      </div>
+      <details class="faq" open>
+        <summary>蕾丝猫衣服的领口松紧留多少才不勒猫？</summary>
+        <div class="faq-body">成年家猫颈围多在20至24厘米，领口预留1.5至2厘米余量，配2.5厘米宽弹力包边，插入两指即可。10月28日验收的17件样品里，余量1厘米的3件全部出现抓挠领口的动作。</div>
+      </details>
+      <details class="faq">
+        <summary>蕾丝面料被猫爪勾丝后怎么修补？</summary>
+        <div class="faq-body">先判断是钩纱还是断纱。钩纱用钝头针沿原纹路挑回背面；断纱面积小于0.5厘米见方，用同色涤纶线在背面三点定位，正面不穿透。棉质硬蕾丝比化纤软网更耐抓，但修补余地小。</div>
+      </details>
+      <details class="faq">
+        <summary>短毛猫和长毛猫的蕾丝猫服饰尺码怎么选？</summary>
+        <div class="faq-body">短毛猫按净胸围加2厘米，长毛猫按净胸围加4厘米，因为腋下毛发会占体积。11月1日测量的12只长毛猫中，9只按短毛尺码购买后腋下有压痕。</div>
+      </details>
+      <details class="faq">
+        <summary>蕾丝猫配饰能不能长期佩戴？</summary>
+        <div class="faq-body">领结、蝴蝶结单次佩戴建议不超过2小时，且主人需在场。含金属扣的项圈在猫独处时应取下，防止钩挂。布面暗扣的款式风险低一些，但仍不建议过夜。</div>
+      </details>
+      <details class="faq">
+        <summary>手作蕾丝猫衣服一般多少钱算合理？</summary>
+        <div class="faq-body">单件上衣用料约0.6米，棉质硬蕾丝每米52至70元，加人工与包边，148至228元属常见区间。低于90元的成品需确认是否使用回收面料或化纤软网，这两种在耐抓与透气上都打折扣。</div>
+      </details>
+      <details class="faq">
+        <summary>蕾丝猫服饰洗后变形怎么办？</summary>
+        <div class="faq-body">30摄氏度以下冷水手洗，不拧干，用毛巾卷吸水后平铺阴干。10月20日实测，机洗甩干后的5件样品中4件花边起波浪，平铺的5件里只有1件边缘轻微卷曲。</div>
+      </details>
+    </div>
+  </section>
+
+  <section class="block" id="comments">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">用户评论</span>
+        <h2>买家留下的原话</h2>
+        <p>从十月验收记录里挑出的七条，正面和负面都保留，涉及具体条目的单独标注。</p>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <p><span class="badge opinion">指向具体条目</span> 棉质硬蕾丝双层背心我复刻了两件。第一次领口按1厘米做的，猫一直用后爪够脖子；改到1.8厘米就安分了。版型没问题，余量这一栏真得看仔细。</p>
+          <div class="who"><span class="avatar">林</span>林女士 · 10月29日</div>
+        </div>
+        <div class="comment">
+          <p><span class="badge opinion">指向具体条目</span> 软网开襟披肩挺省事的，扣一颗就完事。只是下摆第三天就勾出一根丝，我按修补页挑回去了，目前还能穿。</p>
+          <div class="who"><span class="avatar">周</span>周六六 · 10月25日</div>
+        </div>
+        <div class="comment">
+          <p>好看，但我不太确定是不是所有猫都愿意穿。我家这只穿上就不动了，趴在原地十分钟，脱了立刻跑。跟衣服没关系，可能就是个猫的问题。</p>
+          <div class="who"><span class="avatar">阿</span>阿澄 · 10月24日</div>
+        </div>
+        <div class="comment">
+          <p><span class="badge opinion">指向具体条目</span> 加绒马甲第7版立领降到3.2厘米之后好多了。第6版那个4厘米的领子会顶到它下巴，它走路一直低头。这个改动挺实在。</p>
+          <div class="who"><span class="avatar">顾</span>顾小满 · 11月6日</div>
+        </div>
+        <div class="comment">
+          <p>丝绒领结换成布面暗扣之前我买过金属扣的那版，扣子边缘确实有点刮手。现在这版没这个问题，就是颜色比图片深一点，色差能接受。</p>
+          <div class="who"><span class="avatar">M</span>Momo · 11月1日</div>
+        </div>
+        <div class="comment">
+          <p><span class="badge opinion">指向具体条目</span> 连身小裙拍照确实出片，但穿上它一步都不肯走，站那儿像被定住。我拍了三张就脱了，现在压箱底。</p>
+          <div class="who"><span class="avatar">叶</span>叶青 · 10月11日</div>
+        </div>
+        <div class="comment">
+          <p>价格这段写得还算老实。我自己买的棉质硬蕾丝每米62元，做一件背心连包边算下来160元左右，跟区间差不多。低于90元的我也买过，洗一次就散边。</p>
+          <div class="who"><span class="avatar">陈</span>陈默 · 10月23日</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="news">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">相关资讯</span>
+        <h2>面料与版型周边的近况</h2>
+        <p>六条短讯，每条只讲一个事实层，不跟其他板块重复叙述。</p>
+      </div>
+      <div class="news-grid">
+        <div class="news-item">
+          <span class="date">11月5日</span>
+          <h3>棉质硬蕾丝价格三周内第二次上调</h3>
+          <p>三家常供店铺的每米报价从52至70元，较10月23日的45至58元再涨一档，店主称与涤纶混纺纱线成本有关。</p>
+        </div>
+        <div class="news-item">
+          <span class="date">11月3日</span>
+          <h3>水溶花边宽度增加两个规格</h3>
+          <p>新增2.8厘米与3.2厘米两档，原2.5厘米保留。宽度超过3厘米后，脖圈的柔软度明显下降，试制两件均偏硬。</p>
+        </div>
+        <div class="news-item">
+          <span class="date">10月31日</span>
+          <h3>冬季加绒马甲尺码表在社交平台被转发</h3>
+          <p>一张44至48厘米两档的胸围对照表截图被转发了数百次，原表出自11月6日发布前的内部校对稿。</p>
+        </div>
+        <div class="news-item">
+          <span class="date">10月26日</span>
+          <h3>弹力包边供货商更换</h3>
+          <p>原供货商2.5厘米宽包边的回弹率在三次水洗后下降，新批次样品在同样测试下保持得更好。</p>
+        </div>
+        <div class="news-item">
+          <span class="date">10月21日</span>
+          <h3>一批软网披肩下摆返工</h3>
+          <p>6件样品中4件下摆勾丝，均做了卷边重缝。重缝后外观略有差异，档案区保留前后对比图。</p>
+        </div>
+        <div class="news-item">
+          <span class="date">10月18日</span>
+          <h3>猫用领结佩戴时长建议被补充</h3>
+          <p>从“视情况”改为具体的2小时上限，依据是9月一例独处时被沙发缝隙勾住按扣的记录。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="rank">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">榜单</span>
+        <h2>复刻成功率排序</h2>
+        <p>按十月复刻件的返工次数排序，返工越少越靠前。分数为10分制，扣分项集中在领口与包边。</p>
+      </div>
+      <div class="layout-2col" style="grid-template-columns:minmax(0,1fr);">
+        <ol class="rank">
+          <li><span><span class="r-title">加绒蕾丝猫冬季马甲</span><span class="r-sub">第7版，返工2次，主要改立领高度</span></span><span class="r-score">9.2</span></li>
+          <li><span><span class="r-title">棉质硬蕾丝双层背心</span><span class="r-sub">返工3次，全部涉及领口余量</span></span><span class="r-score">8.8</span></li>
+          <li><span><span class="r-title">丝绒底蕾丝猫领结</span><span class="r-sub">返工3次，改暗扣后稳定</span></span><span class="r-score">8.5</span></li>
+          <li><span><span class="r-title">软网蕾丝开襟披肩</span><span class="r-sub">返工5次，下摆勾丝为主</span></span><span class="r-score">7.6</span></li>
+          <li><span><span class="r-title">水溶花边脖圈</span><span class="r-sub">返工5次，宽度调整占多数</span></span><span class="r-score">7.2</span></li>
+          <li><span><span class="r-title">连身蕾丝猫小裙</span><span class="r-sub">返工8次，后腿活动受限难解决</span></span><span class="r-score">6.0</span></li>
+        </ol>
+      </div>
+      <div class="block-head" style="margin-top:34px;">
+        <span class="tag">创作者证言</span>
+        <h2>做的人怎么看</h2>
+      </div>
+      <div class="timeline">
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li><span class="t-date">10月30日 · 缝制者 蒋禾</span>“我做蕾丝猫背心三年，最常返工的是包边走向。斜裁的包边回弹好，但费料，一件多耗0.15米。直裁省料，洗两次就起波浪。”</li>
+          <li><span class="t-date">11月2日 · 版型绘制 何棠</span>“尺寸表里写‘加2厘米’容易误解成胸围加2。其实是在净胸围基础上，前后片各放1厘米，缝份另算。这行字改了三遍。”</li>
+          <li><span class="t-date">11月4日 · 买家兼副业制作者 韦一</span>“软网好看又便宜，但耐抓确实差。我给客户做披肩都提前说清楚，勾丝不算质量问题，可以免费补一次。”</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="related">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="tag">相关推荐</span>
+        <h2>顺着这几条往下看</h2>
+        <p>都是站内已有的具体条目，点开能看到尺寸或面料明细。</p>
+      </div>
+      <ul class="tagcloud">
+        <li><a href="/#deep">领口余量 1.5 厘米的实测记录</a></li>
+        <li><a href="/#picks">猫用蕾丝背心胸围对照表</a></li>
+        <li><a href="/#guide">长毛猫蕾丝衣服尺寸放量</a></li>
+        <li><a href="/#updates">加绒马甲第7版改动点</a></li>
+        <li><a href="/#faq">蕾丝猫衣服勾丝修补步骤</a></li>
+        <li><a href="/#faq">棉质硬蕾丝与软网对比</a></li>
+        <li><a href="/#guide">猫用领结佩戴时长上限</a></li>
+        <li><a href="/#faq">蕾丝猫服饰清洗水温</a></li>
+        <li><a href="/#comments">买家对暗扣改版的评价</a></li>
+        <li><a href="/#rank">复刻成功率排序说明</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="#5c2e40"/>
+            <path d="M17 23l7 11h16l7-11-4 15H21z" fill="#f0cddc"/>
+            <circle cx="25" cy="29" r="2.6" fill="#4a2434"/>
+            <circle cx="39" cy="29" r="2.6" fill="#4a2434"/>
+          </svg>
+          <span>蕾丝猫</span>
+        </div>
+        <p>按尺寸和面料记录猫用蕾丝小衣服的做法与实测反馈，方便照着复刻。</p>
+        <p>内容更新至 2026年11月6日，对应加绒马甲第7版与尺寸表新增两档。</p>
+      </div>
+      <div>
+        <h3>版型与尺寸</h3>
+        <ul>
+          <li><a href="/#picks">精选版型</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#rank">复刻成功率榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>经验与判断</h3>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>说明</h3>
+        <p>站内版型、样品数据与买家评论均为示例条目，用于展示记录方式，不构成购买或医疗建议。</p>
+        <p>面料价格、尺码区间随批次变动，以标注日期为准。</p>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 蕾丝猫手作图鉴 · 示例数据，仅供方法参考</span>
+      <span>最近可核对更新：11月6日 加绒马甲第7版</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 1000){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function markCurrent(){
+    var offset = 130;
+    var idx = -1;
+    for(var i=0;i<targets.length;i++){
+      var el = targets[i];
+      if(el && el.getBoundingClientRect().top - offset <= 0){ idx = i; }
+    }
+    sideLinks.forEach(function(a,i){
+      a.classList.toggle('current', i === idx);
+    });
+  }
+  window.addEventListener('scroll', markCurrent, {passive:true});
+  markCurrent();
+
+  var input = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var highlightEls = [];
+  function clearHighlight(){
+    highlightEls.forEach(function(el){
+      var parent = el.parentNode;
+      if(!parent) return;
+      parent.replaceChild(document.createTextNode(el.textContent), el);
+    });
+    highlightEls = [];
+  }
+  function runSearch(){
+    clearHighlight();
+    var q = input.value.trim();
+    if(!q){
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      return;
+    }
+    var scope = document.querySelector('main');
+    var walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node){
+        if(!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        var p = node.parentNode;
+        if(!p) return NodeFilter.FILTER_REJECT;
+        var tag = p.tagName;
+        if(tag === 'SCRIPT' || tag === 'STYLE') return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var hits = [];
+    var node;
+    while((node = walker.nextNode())){
+      if(node.nodeValue.indexOf(q) !== -1){ hits.push(node); }
+    }
+    if(hits.length === 0){
+      feedback.textContent = '没有找到“' + q + '”，试试“领口”“加绒马甲”或“勾丝”。';
+      feedback.classList.add('show');
+      return;
+    }
+    var firstEl = null;
+    hits.slice(0, 40).forEach(function(n){
+      var text = n.nodeValue;
+      var idx = text.indexOf(q);
+      if(idx === -1) return;
+      var span = document.createElement('span');
+      span.className = 'hl';
+      span.textContent = q;
+      var after = n.splitText(idx);
+      after.nodeValue = after.nodeValue.slice(q.length);
+      n.parentNode.insertBefore(span, after);
+      highlightEls.push(span);
+      if(!firstEl) firstEl = span;
+    });
+    feedback.textContent = '找到 ' + hits.length + ' 处匹配，已高亮。';
+    feedback.classList.add('show');
+    if(firstEl){
+      var top = firstEl.getBoundingClientRect().top + window.scrollY - 150;
+      window.scrollTo({top:top, behavior:'smooth'});
+    }
+  }
+  var timer = null;
+  input.addEventListener('input', function(){
+    clearTimeout(timer);
+    timer = setTimeout(runSearch, 320);
+  });
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); clearTimeout(timer); runSearch(); }
+  });
+})();
+</script>
+</body>
+        </html>
